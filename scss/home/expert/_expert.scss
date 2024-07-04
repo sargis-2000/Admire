@@ -1,0 +1,191 @@
+@import "../../base/vars";
+
+.expert {
+  position: relative;
+  margin-bottom: clamp(5rem, 3.558rem + 6.41vw, 11.25rem);
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    max-width: 1425px;
+    height: 980px;
+    left: 0;
+    top: 122px;
+    background: url("/images/home/cases/cases-icon.svg") no-repeat left top;
+    background-size: contain;
+
+    @include media(1818px) {
+      height: 644px;
+    }
+
+    @include media(1390px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 1px solid rgba(222, 206, 172, 0.5);
+    padding: clamp(1.25rem, 0.615rem + 2.82vw, 4rem) clamp(1.25rem, 0.24rem + 4.49vw, 5.625rem) 0 clamp(1.25rem, 0.24rem + 4.49vw, 5.625rem);
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: clamp(0.938rem, 0.433rem + 2.24vw, 3.125rem);
+  }
+}
+
+.expert-row {
+  @include flex(clamp(0.875rem, -0.25rem + 5vw, 5.75rem));
+
+  @include media(1390px) {
+    flex-direction: column;
+  }
+
+  &__start {
+    max-width: 509px;
+    padding-bottom: 72px;
+
+    @include media(1390px) {
+      max-width: unset;
+      padding-bottom: 0;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.635rem + 0.51vw, 1.25rem);
+    line-height: 150%;
+    color: #ecedf4;
+    margin-bottom: clamp(1.25rem, 0.962rem + 1.28vw, 2.5rem);
+  }
+}
+
+.form {
+  &__inputs {
+    @include flexCol(clamp(1.25rem, 1.178rem + 0.32vw, 1.563rem));
+    margin-bottom: clamp(1.25rem, 1.178rem + 0.32vw, 1.563rem);
+  }
+
+  &__input {
+    width: 100%;
+    background-color: #252525;
+    border-radius: clamp(0.875rem, 0.788rem + 0.38vw, 1.25rem);
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.788rem + 0.38vw, 1.25rem);
+    line-height: 150%;
+    color: #ecedf4;
+    padding: 10px 20px;
+
+    &::placeholder {
+      color: inherit;
+    }
+
+    @include media(1390px) {
+      padding: 14px 20px;
+    }
+  }
+
+  .form__submit {
+    width: 100%;
+    margin-bottom: clamp(0.938rem, 0.721rem + 0.96vw, 1.875rem);
+
+    &:hover {
+      max-width: unset;
+    }
+
+    @include media(430px) {
+      font-size: 12px;
+    }
+  }
+
+  &__text {
+    max-width: 370px;
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.692rem + 0.26vw, 1rem);
+    line-height: 150%;
+    color: #ecedf4;
+    text-align: center;
+  }
+
+  &__link {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: underline !important;
+  }
+}
+
+.expert-about {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 494px;
+    height: 573px;
+    top: 48px;
+    right: -20px;
+    background: url("/images/home/expert/expert-logo.png") no-repeat;
+    background-size: contain;
+
+    @include media(1390px) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 23px;
+      width: 224px;
+      height: 259px;
+    }
+  }
+
+  @include media(1390px) {
+    // padding: 0 47px;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: relative;
+
+    @include media(1390px) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.expert-info {
+  max-width: 264px;
+  position: absolute;
+  right: -162px;
+  top: 117px;
+
+  @include media(1390px) {
+    display: none;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #ecedf4;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #c2c3cc;
+    margin-bottom: 12px;
+  }
+
+  &__languages {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #c2c3cc;
+  }
+}

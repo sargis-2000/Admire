@@ -1,0 +1,35 @@
+.immovables-hero {
+    max-width: 1311px;
+    margin: clamp(6.563rem, 6.202rem + 1.6vw, 8.125rem) auto 0;
+
+    &__content {
+        @include flexRowBetween();
+        align-items: center;
+    }
+
+    &__items {
+        max-width: 834px;
+    }
+
+    .title {
+        margin-bottom: clamp(1.25rem, 1.106rem + 0.64vw, 1.875rem);
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #fff;
+        margin-bottom: clamp(2rem, 1.813rem + 0.83vw, 2.813rem);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        max-width: 354px;
+        display: block;
+        margin-top: clamp(0.938rem, 0.433rem + 2.24vw, 3.125rem);
+    }
+}

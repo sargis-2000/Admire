@@ -1,0 +1,41 @@
+.hero-features {
+    @include flexRowCenter();
+    gap: clamp(0.938rem, 0.721rem + 0.96vw, 1.875rem);
+
+    &__item {
+        position: relative;
+        padding-right: clamp(0.938rem, 0.721rem + 0.96vw, 1.875rem);
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 100%;
+            right: 0;
+            top: 0;
+            background: linear-gradient(to bottom,
+                        rgba(243, 193, 97, 0.31) 0%,
+                        rgba(243, 193, 97, 0) 0.0001%,
+                        rgba(255, 236, 135, 0.75) 28.6458%,
+                        rgba(243, 193, 97, 1) 51.0417%,
+                        rgba(255, 235, 122, 0.75) 70.3125%,
+                        rgba(243, 193, 97, 0) 100%);
+        }
+    }
+
+    &__title {
+        font-family: $third-family;
+        font-size: 42px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #deceac;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #e6e7ef;
+    }
+}

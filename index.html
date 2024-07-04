@@ -1,0 +1,3236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-ua-compatible" content="none">
+    <title>Главная</title>
+    <link rel="stylesheet prefetch" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/splide.min.css">
+    <link rel="stylesheet" href="./css/home.min.css">
+</head>
+<body>
+    <header class="header" style="background-image: url('/images/header/header-bg.jpg');">
+        <div class="header-top">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header-left">
+                        <a href="#" class="logo">
+                            <img src="./images/common/logo.svg" alt="logo">
+                        </a>
+
+                        <ul class="header-left__list">
+                            <li class="header-left__item">
+                                <button class="header-left__btn" data-menu="reality">
+                                    Недвижимость
+                                    <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 9L0.236861 0.749999L9.76314 0.75L5 9Z" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li class="header-left__item">
+                                <button class="header-left__btn" data-menu="builders">
+                                    Застройщики
+                                    <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 9L0.236861 0.749999L9.76314 0.75L5 9Z" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li class="header-left__item">
+                                <button class="header-left__btn" data-menu="districts">
+                                    Районы
+                                    <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 9L0.236861 0.749999L9.76314 0.75L5 9Z" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li class="header-left__item">
+                                <button class="header-left__btn" data-menu="services-menu">
+                                    Услуги
+                                    <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 9L0.236861 0.749999L9.76314 0.75L5 9Z" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li class="header-left__item">
+                                <button class="header-left__btn" data-menu="blog">
+                                    Медиа
+                                    <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 9L0.236861 0.749999L9.76314 0.75L5 9Z" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-right">
+                        <div class="lang-choice">
+                            <button class="lang-choice__btn">
+                                RU
+                                <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 9L0.736861 0.749999L10.2631 0.75L5.5 9Z" fill="#D9D9D9" />
+                                </svg>
+                            </button>
+
+                            <ul class="lang-choice__list">
+                                <li class="lang-choice__item">
+                                    <button class="lang-choice__list-btn">
+                                        RU
+                                    </button>
+                                </li>
+                                <li class="lang-choice__item">
+                                    <button class="lang-choice__list-btn">
+                                        EN
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="header-right__social">
+                            <li class="header-right__item">
+                                <a href="#" class="header-right__link">
+                                    <svg class="header-right__telegram" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.39479 12.2135L6.65889 8.57758L13.9027 2.62943C14.2234 2.36297 13.8367 2.23404 13.4123 2.46612L4.47064 7.61488L0.603488 6.49745C-0.226536 6.28256 -0.235968 5.75823 0.79213 5.38002L15.8552 0.085139C16.5437 -0.198515 17.204 0.23986 16.9399 1.20257L14.3743 12.2135C14.1951 12.9957 13.6764 13.1848 12.9595 12.8238L9.05464 10.1936L7.17765 11.8525C6.96072 12.0502 6.78151 12.2135 6.39479 12.2135Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="header-right__item">
+                                <a href="#" class="header-right__link">
+                                    <svg class="header-right__whatsapp" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.7994 9.568C11.9994 9.672 12.1274 9.728 12.1674 9.808C12.2154 9.896 12.1994 10.296 11.9994 10.752C11.8394 11.2 11.0074 11.632 10.6394 11.648C10.2714 11.664 10.2634 11.936 8.27139 11.064C6.27939 10.192 5.07939 8.064 4.98339 7.928C4.88739 7.792 4.21539 6.824 4.24739 5.84C4.28739 4.864 4.79939 4.4 5.00739 4.208C5.19939 4 5.41539 3.976 5.55139 4H5.92739C6.04739 4 6.21539 3.952 6.36739 4.36L6.91939 5.856C6.96739 5.96 6.99939 6.08 6.92739 6.208L6.71139 6.536L6.39939 6.872C6.30339 6.968 6.19139 7.072 6.30339 7.272C6.39939 7.48 6.79939 8.144 7.35939 8.696C8.08739 9.4 8.72739 9.632 8.91939 9.736C9.11139 9.848 9.23139 9.832 9.35139 9.704L9.99939 8.952C10.1514 8.752 10.2794 8.8 10.4634 8.864L11.7994 9.568ZM7.99939 0C9.04996 0 10.0903 0.206926 11.0609 0.608964C12.0315 1.011 12.9134 1.60028 13.6562 2.34315C14.3991 3.08601 14.9884 3.96793 15.3904 4.93853C15.7925 5.90914 15.9994 6.94943 15.9994 8C15.9994 10.1217 15.1565 12.1566 13.6562 13.6569C12.156 15.1571 10.1211 16 7.99939 16C6.42339 16 4.95939 15.544 3.71939 14.76L-0.000610352 16L1.23939 12.28C0.45539 11.04 -0.000610352 9.576 -0.000610352 8C-0.000610352 5.87827 0.842244 3.84344 2.34254 2.34315C3.84283 0.842855 5.87766 0 7.99939 0ZM7.99939 1.6C6.302 1.6 4.67414 2.27428 3.47391 3.47452C2.27367 4.67475 1.59939 6.30261 1.59939 8C1.59939 9.376 2.03139 10.648 2.76739 11.688L1.99939 14L4.31139 13.232C5.35139 13.968 6.62339 14.4 7.99939 14.4C9.69678 14.4 11.3246 13.7257 12.5249 12.5255C13.7251 11.3253 14.3994 9.69739 14.3994 8C14.3994 6.30261 13.7251 4.67475 12.5249 3.47452C11.3246 2.27428 9.69678 1.6 7.99939 1.6Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="header-right__item header-right__mobile-tel">
+                                <a href="tel:+97144286162" class="header-right__link">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0205 8.14075L9.87651 7.31447C9.29005 6.8848 8.48884 6.94677 7.97259 7.4632L7.44395 7.99202C7.18789 8.24817 6.79967 8.32666 6.48579 8.18207C5.15181 7.57062 4.15648 6.57495 3.53699 5.22811C3.39244 4.91412 3.46678 4.52577 3.72697 4.26962L4.25147 3.74494C4.76772 3.22851 4.82967 2.42702 4.40428 1.83623L3.57829 0.695959C3.29332 0.299344 2.85967 0.0927734 2.4095 0.0927734C2.09149 0.0927734 1.76109 0.196059 1.46374 0.40676C0.282561 1.23717 -0.204777 2.76166 0.274301 4.10437C1.5546 7.70695 4.0078 10.1734 7.55959 11.4417C7.91477 11.5698 8.28234 11.6277 8.64577 11.6277C9.6824 11.6277 10.6901 11.1319 11.3096 10.2519L11.3592 10.1817C11.8217 9.5289 11.6689 8.61173 11.0205 8.14075Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <a href="tel:+97144286162" class="header-right__tel">
+                            +971 4 428 6162
+                        </a>
+
+                        <button class="burger-btn">
+                            <img class="burger-icon" src="./images/header/burger-icon.svg" alt="burger-icon">
+                            <img class="menu-close" src="./images/header/menu-close.svg" alt="close">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="menu-full reality">
+                <ul class="menu-full__list">
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/reality-img.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/reality-img.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                ВСЕ ПРОЕКТЫ
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/reality-img2.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/reality-img2.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Апартаменты
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/reality-img3.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/reality-img3.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Дуплексы
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/reality-img4.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/reality-img4.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Пентхаусы
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/reality-img5.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/reality-img5.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Коммерческая<br> недвижимость
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="builders">
+                <div class="menu-item builders-item">
+                    <picture>
+                        <source srcset="./images/header/builder-img.avif" type="image/avif">
+                        <img class="menu-item__img" src="./images/header/builder-img.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <div class="menu-item__wrapper">
+                        <a href="#" class="menu-item__link">
+                            Все застройщики
+                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="dropdown-list builders-list">
+                    <li class="dropdown-list__item">
+                        <ul class="dropdown-links">
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link" data-builder="damac">
+                                    DAMAC Proterties
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link" data-builder="emaar">
+                                    Emaar properties
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link" data-builder="meraas">
+                                    Meraas holding
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Dubai  properties
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link" data-builder="makheel">
+                                    Nakheel
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Sobha realty
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Seven tides
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-list__item">
+                        <ul class="dropdown-links">
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link" data-builder="select-group">
+                                    Select group
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    liv developers
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    omniyat properties
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    ellington
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    muriya
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    alta real estate
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="menu-item builders-item">
+                    <picture>
+                        <source srcset="./images/header/builder-img2.avif" type="image/avif">
+                        <img class="menu-item__img" src="./images/header/builder-img2.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source srcset="./images/home/projects/project-img.avif" type="image/avif">
+                        <img class="menu-item__img builders-img binghatti" src="./images/home/projects/project-img.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source srcset="./images/home/projects/project-img4.avif" type="image/avif">
+                        <img class="menu-item__img builders-img damac" src="./images/home/projects/project-img4.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source srcset="./images/home/projects/project-img7.avif" type="image/avif">
+                        <img class="menu-item__img builders-img emaar" src="./images/home/projects/project-img7.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source srcset="./images/home/projects/project-img5.avif" type="image/avif">
+                        <img class="menu-item__img builders-img makheel" src="./images/home/projects/project-img5.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source srcset="./images/header/builder-img.avif" type="image/avif">
+                        <img class="menu-item__img builders-img" src="./images/header/builder-img.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source srcset="./images/home/projects/project-img9.avif" type="image/avif">
+                        <img class="menu-item__img builders-img select-group" src="./images/home/projects/project-img9.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source srcset="./images/home/projects/project-img6.avif" type="image/avif">
+                        <img class="menu-item__img builders-img meraas" src="./images/home/projects/project-img6.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <div class="menu-item__wrapper">
+                        <a href="#" class="menu-item__link">
+                            Каталог недвижимости
+                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="services-nav services-menu">
+                <div class="menu-item services-item">
+                    <picture>
+                        <source srcset="./images/header/services-img.avif" type="image/avif">
+                        <img class="menu-item__img" src="./images/header/services-img.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <div class="menu-item__wrapper">
+                        <a href="#" class="menu-item__link">
+                            О компании
+                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="menu-item services-item">
+                    <picture>
+                        <source srcset="./images/header/services-img2.avif" type="image/avif">
+                        <img class="menu-item__img" src="./images/header/services-img2.jpg" alt="img" loading="lazy">
+                    </picture>
+
+                    <div class="menu-item__wrapper">
+                        <a href="#" class="menu-item__link">
+                            Инвестиции с Admire Estate
+                            <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="dropdown-list services-items">
+                    <li class="dropdown-list__item">
+                        <ul class="dropdown-links">
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Покупка недвижимости в Дубае
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Продажа недвижимости в Дубае
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Аренда недвижимости в ОАЭ
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Недвижимость Ras Al Khaim
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Недвижимость в Абу-даби
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Криптовалюта и блокчейн в дубае
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Ипотека в Дубае - пошаговая инструкция
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-list__item">
+                        <ul class="dropdown-links">
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Admire Flip
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Как открыть компанию в Дубае
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Визы в ОАЭ
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Управление недвижимостью
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Приёмка апартаментов в Дубае
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Финансовая консультация
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link">
+                                    Как открыть компанию в Дубае
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="li dropdown-links__item">
+                                <a href="#" class="dropdown-links__link link-all">
+                                    ВСЕ УСЛУГИ
+                                    <img src="./images/header/arrow-right.svg" alt="arrow" loading="lazy">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="menu-full districts">
+                <ul class="menu-full__list">
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/districts-img.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/districts-img.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                ВСе районы
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/districts-img2.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/districts-img2.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Dubai Marina
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/districts-img3.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/districts-img3.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Downtown Dubai
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/districts-img4.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/districts-img4.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Business Bay
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/districts-img5.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/districts-img5.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Dubailand
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="menu-full blog">
+                <ul class="menu-full__list">
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/blog-img.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/blog-img.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Все новости
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/blog-img2.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/blog-img2.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Admire Podcast
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/blog-img3.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/blog-img3.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Работа в Admire Estate
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <picture>
+                            <source srcset="./images/header/blog-img4.avif" type="image/avif">
+                            <img class="menu-item__img" src="./images/header/blog-img4.jpg" alt="img" loading="lazy">
+                        </picture>
+
+                        <div class="menu-item__wrapper">
+                            <a href="#" class="menu-item__link">
+                                Партнерская программа
+                                <svg width="31" height="9" viewBox="0 0 31 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4C0.723858 4 0.5 4.22386 0.5 4.5C0.5 4.77614 0.723858 5 1 5V4ZM30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM1 5L30 5V4L1 4V5Z" fill="#E5C23E"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="home-hero">
+            <div class="container">
+                <div class="home-hero__content">
+                    <div class="home-hero__left">
+                        <span class="home-hero__label">МЕССЕНДЖЕРЫ</span>
+                        <span class="home-hero__line"></span>
+                        <ul class="home-hero__social">
+                            <li class="home-hero__item">
+                                <a href="#" class="home-hero__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                                        <path fill="#E7E4DE" d="M19.175 15.548c.325.169.533.26.598.39.078.143.052.793-.273 1.534-.26.728-1.612 1.43-2.21 1.456-.598.026-.611.468-3.848-.949s-5.187-4.875-5.343-5.096c-.156-.221-1.248-1.794-1.196-3.393.065-1.586.897-2.34 1.235-2.652.312-.338.663-.377.884-.338h.611c.195 0 .468-.078.715.585l.897 2.431c.078.169.13.364.013.572l-.351.533-.507.546c-.156.156-.338.325-.156.65.156.338.806 1.417 1.716 2.314 1.183 1.144 2.223 1.521 2.535 1.69.312.182.507.156.702-.052l1.053-1.222c.247-.325.455-.247.754-.143l2.171 1.144ZM13 0a13 13 0 1 1 0 26 12.96 12.96 0 0 1-6.955-2.015L0 26l2.015-6.045A12.96 12.96 0 0 1 0 13 13 13 0 0 1 13 0Zm0 2.6A10.4 10.4 0 0 0 2.6 13c0 2.236.702 4.303 1.898 5.993L3.25 22.75l3.757-1.248A10.335 10.335 0 0 0 13 23.4a10.4 10.4 0 1 0 0-20.8Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="home-hero__item">
+                                <a href="#" class="home-hero__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="22" fill="none" viewBox="0 0 29 22">
+                                        <path fill="#E7E4DE" d="m10.91 20.669.45-6.153L23.718 4.45c.547-.451-.113-.67-.837-.277L7.627 12.887l-6.596-1.891c-1.416-.364-1.432-1.251.321-1.891L27.048.145c1.175-.48 2.301.26 1.85 1.89L24.522 20.67c-.306 1.324-1.19 1.644-2.413 1.033l-6.662-4.451-3.202 2.807c-.37.335-.675.611-1.335.611Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="home-hero__item">
+                                <a href="#" class="home-hero__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="none" viewBox="0 0 28 24">
+                                        <path fill="#E7E4DE" d="M25.2 6 14 13.5 2.8 6V3L14 10.5 25.2 3v3Zm0-6H2.8C1.246 0 0 1.335 0 3v18c0 .796.295 1.559.82 2.121A2.709 2.709 0 0 0 2.8 24h22.4c.743 0 1.455-.316 1.98-.879A3.11 3.11 0 0 0 28 21V3c0-1.665-1.26-3-2.8-3Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="home-hero__right">
+                        <h1 class="title home-hero__title">
+                            Лучшая недвижимость в Дубае от ведущих застройщиков ОАЭ
+                        </h1>
+
+                        <p class="home-hero__text">
+                            Инвестируйте в недвижимость Дубая, чтобы получать доход от 8% до 30% годовых, или проживать в одном из самых развитых и безопасных городов мира.
+                        </p>
+
+                        <button class="section-item home-hero__btn" data-popup="catalog-popup">
+                            <span class="section-item__inner">Скачать каталог</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <img class="partners__img-left" src="./images/home/partners/partners-img-left.svg" alt="img">
+            <img class="partners__img-right" src="./images/home/partners/partners-img-right.svg" alt="img">
+            <img class="partners__img-center" src="./images/home/partners/partners-img-center.svg" alt="img">
+
+            <div class="container">
+                <div class="partners__content">
+                    <h2 class="title partners__title">
+                        Наши партнеры
+                    </h2>
+
+                    <p class="partners__text">
+                        Мы работаем с лучшими застройщиками
+                    </p>
+
+                    <div class="partners-list splide">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner.avif" type="image/avif">
+                                        <img src="./images/home/partners/partner.png" alt="partner">
+                                    </picture>
+                                </div>
+    
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner-2.avif" type="image/avif">
+                                        <img src="./images/home/partners/partner-2.png" alt="partner">
+                                    </picture>
+                                </div>
+    
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner-3.avif" type="image/avif">
+                                        <img src="./images/home/partners/partner-3.png" alt="partner">
+                                    </picture>
+                                </div>
+    
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner-4.avif" type="image/avif">
+                                        <img src="./images/home/partners/partner-4.png" alt="partner">
+                                    </picture>
+                                </div>
+    
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner-5.avif" type="image/avif">
+                                        <img src="./images/home/partners/partner-5.png" alt="partner">
+                                    </picture>
+                                </div>
+    
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner.avif" type="image/avif">
+                                        <img src="./images/home/partners/partner.png" alt="partner">
+                                    </picture>
+                                </div>
+    
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner-3.avif" type="image/avif">
+                                        <img class="partners-list__logo" src="./images/home/partners/partner-3.png" alt="project-logo">
+                                    </picture>
+                                </div>
+    
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner-3.avif" type="image/avif">
+                                        <img src="./images/home/partners/partner-3.png" alt="partner">
+                                    </picture>
+                                </div>
+    
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner-4.avif" type="image/avif">
+                                        <img src="./images/home/partners/partner-4.png" alt="partner">
+                                    </picture>
+                                </div>
+    
+                                <div class="partners-list__item splide__slide">
+                                    <picture>
+                                        <source srcset="./images/home/partners/partner-5.avif" type="image/avif">
+                                        <img src="./images/home/partners/partner-5.png" alt="partner">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="partners-list__scrollbar">
+                            <div class="partners-list__scrollbar-thumb"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <button class="mobile-menu__btn">
+                        Недвижимость
+                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 9L0.736861 0.749999L10.2631 0.75L5.5 9Z" fill="#D9D9D9" />
+                        </svg>
+                    </button>
+
+                    <ul class="mobile-links">
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Апартаменты
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Дуплексы
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Пентхаусы
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Виллы
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Таунхаусы
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="mobile-links__full">
+                        Вся недвижимость
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <button class="mobile-menu__btn">
+                        Застройщики
+                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 9L0.736861 0.749999L10.2631 0.75L5.5 9Z" fill="#D9D9D9" />
+                        </svg>
+                    </button>
+
+                    <ul class="mobile-links">
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                DAMAC Proterties
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Emaar properties
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Meraas holding
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Dubai  properties
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Nakheel
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Sobha realty
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Seven tides
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Select group
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                liv developers
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                omniyat properties
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                ellington
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                alta real estate
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="mobile-links__full">
+                        Все застройщики
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <button class="mobile-menu__btn">
+                        Районы
+                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 9L0.736861 0.749999L10.2631 0.75L5.5 9Z" fill="#D9D9D9" />
+                        </svg>
+                    </button>
+
+                    <ul class="mobile-links">
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Dubai Marina
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Downtown Dubai
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Business Bay
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Dubailand
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="mobile-links__full">
+                        ВСе районы
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <button class="mobile-menu__btn">
+                        Услуги
+                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 9L0.736861 0.749999L10.2631 0.75L5.5 9Z" fill="#D9D9D9" />
+                        </svg>
+                    </button>
+
+                    <ul class="mobile-links">
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Инвестиции с Admire Estate
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Покупка недвижимости в Дубае
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Продажа недвижимости в Дубае
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Аренда недвижимости в ОАЭ
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Недвижимость Ras Al Khaim
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Недвижимость в Абу-даби
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Криптовалюта и блокчейн в дубае
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Ипотека в Дубае - пошаговая инструкция
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Admire Flip
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Как открыть компанию в Дубае
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Визы в ОАЭ
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Управление недвижимостью
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Приёмка апартаментов в Дубае
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Финансовая консультация
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Как открыть компанию в Дубае
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="mobile-links__full">
+                        ВСЕ УСЛУГИ
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <button class="mobile-menu__btn">
+                        Медиа
+                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 9L0.736861 0.749999L10.2631 0.75L5.5 9Z" fill="#D9D9D9" />
+                        </svg>
+                    </button>
+
+                    <ul class="mobile-links">
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Admire Podcast
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Работа в Admire Estate
+                            </a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="#" class="mobile-links__link">
+                                Партнерская программа
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="mobile-links__full">
+                        Все новости
+                    </a>
+                </li>
+            </ul>
+
+            <div class="mobile-lang">
+                <button class="mobile-lang__btn">
+                    RU
+                    <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 9L0.736861 0.749999L10.2631 0.75L5.5 9Z" fill="#D9D9D9" />
+                    </svg>
+                </button>
+
+                <ul class="mobile-lang__list">
+                    <li class="mobile-lang__item">
+                        <button class="mobile-lang__inner-btn">
+                            RU
+                        </button>
+                    </li>
+
+                    <li class="mobile-lang__item">
+                        <button class="mobile-lang__inner-btn">
+                            EN
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="popup catalog-popup">
+            <div class="popup-content">
+                <button class="popup-content__close popup-close">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.41528" y="7.62939e-05" width="28" height="2" rx="1" transform="rotate(45 1.41528 7.62939e-05)" fill="white"></rect>
+                        <rect x="21.2131" y="1.41422" width="28" height="2" rx="1" transform="rotate(135 21.2131 1.41422)" fill="white"></rect>
+                    </svg>
+                </button>
+
+                <h2 class="title popup-content__title">Скачайте каталог</h2>
+                <div class="catalog-popup__row">
+                    <div class="catalog-popup__wrapper">
+                        <picture>
+                            <source srcset="./images/header/catalog-popup-img.avif" type="image/avif">
+                            <img src="./images/header/catalog-popup-img.png" alt="img">
+                        </picture>
+                    </div>
+
+                    <div class="catalog-popup__items">
+                        <h3 class="catalog-popup__subtitle">
+                            Откройте для себя Дубай новыми глазами!
+                        </h3>
+
+                        <p class="catalog-popup__text">
+                            Загрузите эксклюзивный каталог с актуальными предложениями по недвижимости. Оставьте свои контакты, и наш эксперт оперативно свяжется с вами, чтобы предложить объекты, идеально соответствующие вашим запросам и ожиданиям.
+                        </p>
+
+                        <form class="catalog-popup__form">
+                            <div class="catalog-popup__inputs">
+                                <label>
+                                    <input class="catalog-popup__input" type="text" placeholder="Ваше имя">
+                                </label>
+                                <label>
+                                    <input class="catalog-popup__input" type="tel" placeholder="Телефон">
+                                </label>
+                            </div>
+
+                            <button class="section-item catalog-popup__btn" type="submit">
+                                <span class="section-item__inner">Скачать</span>
+                            </button>
+
+                            <p class="form-text">
+                                Отправляя данную форму вы соглашаетесь <a class="form-text__link" href="#">с политикой конфиденциальности</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="projects">
+            <h2 class="title projects__title">
+                Проекты
+            </h2>
+
+            <div class="projects-list swiper">
+                <div class="swiper-wrapper">
+                    <div class="projects-list__item swiper-slide">
+                        <picture>
+                            <source srcset="./images/home/projects/project-img.avif" type="image/avif">
+                            <img src="./images/home/projects/project-img.jpg" alt="project-img" class="projects-list__img">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./images/home/projects/project-logo.avif" type="image/avif">
+                            <img class="projects-list__logo" src="./images/home/projects/project-logo.png" alt="project-logo">
+                        </picture>
+
+                        <div class="project-desc-wrapper">
+                            <div class="project-desc">
+                                <picture>
+                                    <source srcset="./images/home/projects/project-desc-logo.avif" type="image/avif">
+                                    <img src="./images/home/projects/project-desc-logo.png" alt="logo">
+                                </picture>
+
+                                <h3 class="project-desc__title">
+                                    Lorem ipsum dolor
+                                </h3>
+
+                                <span class="project-desc__location">
+                                    <img src="./images/home/projects/map-marker.svg" alt="map">
+                                    Район проекта
+                                </span>
+
+                                <p class="project-desc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                </p>
+
+                                <div class="project-desc__price-wrapper">
+                                    Цена от
+
+                                    <strong class="project-desc__wrapper">
+                                        3 600 000 $
+                                    </strong>
+                                </div>
+
+                                <a href="#" class="project-desc__link">
+                                    Узнать ПОДРОБНЕЕ
+                                    <img class="project-desc__arrow" src="./images/home/projects/arrow-right.svg"
+                                         alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-list__item swiper-slide">
+                        <picture>
+                            <source srcset="./images/home/projects/project-img2.avif" type="image/avif">
+                            <img src="./images/home/projects/project-img2.jpg" alt="project-img" class="projects-list__img">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./images/home/projects/project-logo.avif" type="image/avif">
+                            <img class="projects-list__logo" src="./images/home/projects/project-logo.png"
+                                 alt="project-logo">
+                        </picture>
+
+                        <div class="project-desc-wrapper">
+                            <div class="project-desc">
+                                <picture>
+                                    <source srcset="./images/home/projects/project-desc-logo.avif" type="image/avif">
+                                    <img src="./images/home/projects/project-desc-logo.png" alt="logo">
+                                </picture>
+
+                                <h3 class="project-desc__title">
+                                    Lorem ipsum dolor
+                                </h3>
+
+                                <span class="project-desc__location">
+                                    <img src="./images/home/projects/map-marker.svg" alt="map">
+                                    Район проекта
+                                </span>
+
+                                <p class="project-desc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                </p>
+
+                                <div class="project-desc__price-wrapper">
+                                    Цена от
+
+                                    <strong class="project-desc__wrapper">
+                                        3 600 000 $
+                                    </strong>
+                                </div>
+
+                                <a href="#" class="project-desc__link">
+                                    Узнать ПОДРОБНЕЕ
+                                    <img class="project-desc__arrow" src="./images/home/projects/arrow-right.svg"
+                                         alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-list__item swiper-slide">
+                        <picture>
+                            <source srcset="./images/home/projects/project-img3.avif" type="image/avif">
+                            <img src="./images/home/projects/project-img3.jpg" alt="project-img" class="projects-list__img">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./images/home/projects/project-logo2.avif" type="image/avif">
+                            <img class="projects-list__logo" src="./images/home/projects/project-logo.png"
+                                 alt="project-logo">
+                        </picture>
+
+                        <div class="project-desc-wrapper">
+                            <div class="project-desc">
+                                <picture>
+                                    <source srcset="./images/home/projects/project-desc-logo.avif" type="image/avif">
+                                    <img src="./images/home/projects/project-desc-logo.png" alt="logo">
+                                </picture>
+
+                                <h3 class="project-desc__title">
+                                    Lorem ipsum dolor
+                                </h3>
+
+                                <span class="project-desc__location">
+                                    <img src="./images/home/projects/map-marker.svg" alt="map">
+                                    Район проекта
+                                </span>
+
+                                <p class="project-desc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                </p>
+
+                                <div class="project-desc__price-wrapper">
+                                    Цена от
+
+                                    <strong class="project-desc__wrapper">
+                                        3 600 000 $
+                                    </strong>
+                                </div>
+
+                                <a href="#" class="project-desc__link">
+                                    Узнать ПОДРОБНЕЕ
+                                    <img class="project-desc__arrow" src="./images/home/projects/arrow-right.svg"
+                                         alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-list__item swiper-slide">
+                        <picture>
+                            <source srcset="./images/home/projects/project-img4.avif" type="image/avif">
+                            <img src="./images/home/projects/project-img4.jpg" alt="project-img" class="projects-list__img">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./images/home/projects/project-logo3.avif" type="image/avif">
+                            <img class="projects-list__logo" src="./images/home/projects/project-logo.png"
+                                 alt="project-logo">
+                        </picture>
+
+                        <div class="project-desc-wrapper">
+                            <div class="project-desc">
+                                <picture>
+                                    <source srcset="./images/home/projects/project-desc-logo.avif" type="image/avif">
+                                    <img src="./images/home/projects/project-desc-logo.png" alt="logo">
+                                </picture>
+
+                                <h3 class="project-desc__title">
+                                    Lorem ipsum dolor
+                                </h3>
+
+                                <span class="project-desc__location">
+                                    <img src="./images/home/projects/map-marker.svg" alt="map">
+                                    Район проекта
+                                </span>
+
+                                <p class="project-desc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                </p>
+
+                                <div class="project-desc__price-wrapper">
+                                    Цена от
+
+                                    <strong class="project-desc__wrapper">
+                                        3 600 000 $
+                                    </strong>
+                                </div>
+
+                                <a href="#" class="project-desc__link">
+                                    Узнать ПОДРОБНЕЕ
+                                    <img class="project-desc__arrow" src="./images/home/projects/arrow-right.svg"
+                                         alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-list__item swiper-slide">
+                        <picture>
+                            <source srcset="./images/home/projects/project-img5.avif" type="image/avif">
+                            <img src="./images/home/projects/project-img5.jpg" alt="project-img" class="projects-list__img">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./images/home/projects/project-logo4.avif" type="image/avif">
+                            <img class="projects-list__logo" src="./images/home/projects/project-logo.png"
+                                 alt="project-logo">
+                        </picture>
+
+                        <div class="project-desc-wrapper">
+                            <div class="project-desc">
+                                <picture>
+                                    <source srcset="./images/home/projects/project-desc-logo.avif" type="image/avif">
+                                    <img src="./images/home/projects/project-desc-logo.png" alt="logo">
+                                </picture>
+
+                                <h3 class="project-desc__title">
+                                    Lorem ipsum dolor
+                                </h3>
+
+                                <span class="project-desc__location">
+                                    <img src="./images/home/projects/map-marker.svg" alt="map">
+                                    Район проекта
+                                </span>
+
+                                <p class="project-desc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                </p>
+
+                                <div class="project-desc__price-wrapper">
+                                    Цена от
+
+                                    <strong class="project-desc__wrapper">
+                                        3 600 000 $
+                                    </strong>
+                                </div>
+
+                                <a href="#" class="project-desc__link">
+                                    Узнать ПОДРОБНЕЕ
+                                    <img class="project-desc__arrow" src="./images/home/projects/arrow-right.svg"
+                                         alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-list__item swiper-slide">
+                        <picture>
+                            <source srcset="./images/home/projects/project-img6.avif" type="image/avif">
+                            <img src="./images/home/projects/project-img6.jpg" alt="project-img" class="projects-list__img">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./images/home/projects/project-logo5.avif" type="image/avif">
+                            <img class="projects-list__logo" src="./images/home/projects/project-logo.png"
+                                 alt="project-logo">
+                        </picture>
+
+                        <div class="project-desc-wrapper">
+                            <div class="project-desc">
+                                <picture>
+                                    <source srcset="./images/home/projects/project-desc-logo.avif" type="image/avif">
+                                    <img src="./images/home/projects/project-desc-logo.png" alt="logo">
+                                </picture>
+
+                                <h3 class="project-desc__title">
+                                    Lorem ipsum dolor
+                                </h3>
+
+                                <span class="project-desc__location">
+                                    <img src="./images/home/projects/map-marker.svg" alt="map">
+                                    Район проекта
+                                </span>
+
+                                <p class="project-desc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                </p>
+
+                                <div class="project-desc__price-wrapper">
+                                    Цена от
+
+                                    <strong class="project-desc__wrapper">
+                                        3 600 000 $
+                                    </strong>
+                                </div>
+
+                                <a href="#" class="project-desc__link">
+                                    Узнать ПОДРОБНЕЕ
+                                    <img class="project-desc__arrow" src="./images/home/projects/arrow-right.svg"
+                                         alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-list__item swiper-slide">
+                        <picture>
+                            <source srcset="./images/home/projects/project-img7.avif" type="image/avif">
+                            <img src="./images/home/projects/project-img7.jpg" alt="project-img" class="projects-list__img">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./images/home/projects/project-logo6.avif" type="image/avif">
+                            <img class="projects-list__logo" src="./images/home/projects/project-logo.png"
+                                 alt="project-logo">
+                        </picture>
+
+                        <div class="project-desc-wrapper">
+                            <div class="project-desc">
+                                <picture>
+                                    <source srcset="./images/home/projects/project-desc-logo.avif" type="image/avif">
+                                    <img src="./images/home/projects/project-desc-logo.png" alt="logo">
+                                </picture>
+
+                                <h3 class="project-desc__title">
+                                    Lorem ipsum dolor
+                                </h3>
+
+                                <span class="project-desc__location">
+                                    <img src="./images/home/projects/map-marker.svg" alt="map">
+                                    Район проекта
+                                </span>
+
+                                <p class="project-desc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                </p>
+
+                                <div class="project-desc__price-wrapper">
+                                    Цена от
+
+                                    <strong class="project-desc__wrapper">
+                                        3 600 000 $
+                                    </strong>
+                                </div>
+
+                                <a href="#" class="project-desc__link">
+                                    Узнать ПОДРОБНЕЕ
+                                    <img class="project-desc__arrow" src="./images/home/projects/arrow-right.svg"
+                                         alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-list__item swiper-slide">
+                        <picture>
+                            <source srcset="./images/home/projects/project-img8.avif" type="image/avif">
+                            <img src="./images/home/projects/project-img8.jpg" alt="project-img" class="projects-list__img">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./images/home/projects/project-logo7.avif" type="image/avif">
+                            <img class="projects-list__logo" src="./images/home/projects/project-logo.png"
+                                 alt="project-logo">
+                        </picture>
+
+                        <div class="project-desc-wrapper">
+                            <div class="project-desc">
+                                <picture>
+                                    <source srcset="./images/home/projects/project-desc-logo.avif" type="image/avif">
+                                    <img src="./images/home/projects/project-desc-logo.png" alt="logo">
+                                </picture>
+
+                                <h3 class="project-desc__title">
+                                    Lorem ipsum dolor
+                                </h3>
+
+                                <span class="project-desc__location">
+                                    <img src="./images/home/projects/map-marker.svg" alt="map">
+                                    Район проекта
+                                </span>
+
+                                <p class="project-desc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                </p>
+
+                                <div class="project-desc__price-wrapper">
+                                    Цена от
+
+                                    <strong class="project-desc__wrapper">
+                                        3 600 000 $
+                                    </strong>
+                                </div>
+
+                                <a href="#" class="project-desc__link">
+                                    Узнать ПОДРОБНЕЕ
+                                    <img class="project-desc__arrow" src="./images/home/projects/arrow-right.svg"
+                                         alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-list__item swiper-slide">
+                        <picture>
+                            <source srcset="./images/home/projects/project-img9.avif" type="image/avif">
+                            <img src="./images/home/projects/project-img9.jpg" alt="project-img" class="projects-list__img">
+                        </picture>
+
+                        <picture>
+                            <source srcset="./images/home/projects/project-logo8.avif" type="image/avif">
+                            <img class="projects-list__logo" src="./images/home/projects/project-logo.png"
+                                 alt="project-logo">
+                        </picture>
+
+                        <div class="project-desc-wrapper">
+                            <div class="project-desc">
+                                <picture>
+                                    <source srcset="./images/home/projects/project-desc-logo.avif" type="image/avif">
+                                    <img src="./images/home/projects/project-desc-logo.png" alt="logo">
+                                </picture>
+
+                                <h3 class="project-desc__title">
+                                    Lorem ipsum dolor
+                                </h3>
+
+                                <span class="project-desc__location">
+                                    <img src="./images/home/projects/map-marker.svg" alt="map">
+                                    Район проекта
+                                </span>
+
+                                <p class="project-desc__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                </p>
+
+                                <div class="project-desc__price-wrapper">
+                                    Цена от
+
+                                    <strong class="project-desc__wrapper">
+                                        3 600 000 $
+                                    </strong>
+                                </div>
+
+                                <a href="#" class="project-desc__link">
+                                    Узнать ПОДРОБНЕЕ
+                                    <img class="project-desc__arrow" src="./images/home/projects/arrow-right.svg"
+                                         alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="projects-buttons slider-buttons">
+                <li class="projects-buttons__item">
+                    <button class="projects-buttons__prev slider-buttons__btn">
+                        <img src="images/common/slider-arrow-left.svg" alt="arrow">
+                    </button>
+                </li>
+
+                <li class="projects-buttons__item">
+                    <button class="projects-buttons__next slider-buttons__btn">
+                        <img src="images/common/slider-arrow-right.svg" alt="arrow">
+                    </button>
+                </li>
+            </ul>
+
+            <a href="#" class="section-item projects__link">
+                <span class="section-item__inner">Все проекты</span>
+            </a>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__content">
+                    <h2 class="title benefits__title">
+                        Почему Дубай?
+                    </h2>
+
+                    <ul class="benefits-list">
+                        <li class="benefits-list__item benefits-list--top disabled">
+                            <span class="benefits-list__label">
+                                Более
+                            </span>
+
+                            <h3 class="benefits-list__title">
+                                90 тысяч
+                            </h3>
+
+                            <p class="benefits-list__text">
+                                Объектов жилой и коммерческой недвижимости в ОАЭ
+                            </p>
+                        </li>
+
+                        <li class="benefits-list__item benefits-list--top disabled">
+                            <span class="benefits-list__label">
+                                AED
+                            </span>
+
+                            <h3 class="benefits-list__title">
+                                400 млрд
+                            </h3>
+
+                            <p class="benefits-list__text">
+                                Объём сделок за 2023 год
+                            </p>
+                        </li>
+
+                        <li class="benefits-list__item benefits-list--top disabled">
+                            <span class="benefits-list__label">
+                                3.67 AED = 1$
+                            </span>
+
+                            <h3 class="benefits-list__title">
+                                >20 лет
+                            </h3>
+
+                            <p class="benefits-list__text">
+                                Курс дирхама к доллару стабилен свыше 20 лет
+                            </p>
+                        </li>
+
+                        <li class="benefits-list__item benefits-list--bottom disabled">
+                            <h3 class="benefits-list__title">
+                                129 тысяч
+                            </h3>
+
+                            <p class="benefits-list__text">
+                                Единиц жилой и коммерческой недвижимости продано за 2023 год
+                            </p>
+                        </li>
+
+                        <li class="benefits-list__item benefits-list--bottom disabled">
+                            <h3 class="benefits-list__title">
+                                100 тысяч
+                            </h3>
+
+                            <p class="benefits-list__text">
+                                Новых Emirates ID выдано в 2023 году
+                            </p>
+                        </li>
+
+                        <li class="benefits-list__item benefits-list--bottom disabled">
+                            <h3 class="benefits-list__title">
+                                от 350 000$
+                            </h3>
+                            <p class="benefits-list__text">
+                                Средняя стоимость недвижимости в районах с высоким ROI
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="benefits-list mobile-benefits swiper disabled">
+                        <div class="swiper-wrapper">
+                            <div class="mobile-benefits__wrapper swiper-slide">
+                                <div class="benefits-list__item">
+                                    <span class="benefits-list__label">
+                                        Более
+                                    </span>
+
+                                    <h3 class="benefits-list__title">
+                                        90 тысяч
+                                    </h3>
+
+                                    <p class="benefits-list__text">
+                                        Объектов жилой и коммерческой недвижимости в ОАЭ
+                                    </p>
+                                </div>
+
+                                <div class="benefits-list__item">
+                                    <span class="benefits-list__label">
+                                        AED
+                                    </span>
+
+                                    <h3 class="benefits-list__title">
+                                        400 млрд
+                                    </h3>
+
+                                    <p class="benefits-list__text">
+                                        Объём сделок за 2023 год
+                                    </p>
+                                </div>
+
+                                <div class="benefits-list__item">
+                                    <span class="benefits-list__label">
+                                        3.67 AED = 1$
+                                    </span>
+
+                                    <h3 class="benefits-list__title">
+                                        >20 лет
+                                    </h3>
+
+                                    <p class="benefits-list__text">
+                                        Курс дирхама к доллару стабилен свыше 20 лет
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mobile-benefits__wrapper swiper-slide">
+                                <div class="benefits-list__item">
+                                    <h3 class="benefits-list__title">
+                                        129 тысяч
+                                    </h3>
+
+                                    <p class="benefits-list__text">
+                                        Единиц жилой и коммерческой недвижимости продано за 2023 год
+                                    </p>
+                                </div>
+
+                                <div class="benefits-list__item">
+                                    <h3 class="benefits-list__title">
+                                        100 тысяч
+                                    </h3>
+
+                                    <p class="benefits-list__text">
+                                        Новых Emirates ID выдано в 2023 году
+                                    </p>
+                                </div>
+
+                                <div class="benefits-list__item">
+                                    <h3 class="benefits-list__title">
+                                        от 350 000$
+                                    </h3>
+                                    <p class="benefits-list__text">
+                                        Средняя стоимость недвижимости в районах с высоким ROI
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <ul class="benefits-buttons slider-buttons">
+                        <li class="benefits-buttons__item">
+                            <button class="benefits-buttons__prev slider-buttons__btn">
+                                <img src="./images/common/slider-arrow-left.svg" alt="arrow">
+                            </button>
+                        </li>
+
+                        <li class="benefits-buttons__item">
+                            <button class="benefits-buttons__next slider-buttons__btn">
+                                <img src="./images/common/slider-arrow-right.svg" alt="arrow">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features__content">
+                    <h2 class="title features__title">
+                        Почему выгодно инвестировать в недвижимость Дубая?
+                    </h2>
+
+                    <div class="features-items disabled">
+                        <ol class="features-list">
+                            <li class="features-list__item">
+                                <img src="./images/home/features/features-icon.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    Толерантность
+                                </h3>
+
+                                <p class="features-list__text">
+                                    Дубай - город, где толерантность не просто слово, а образ жизни, где более 200 национальностей и 80% иностранцы, живущие в гармонии благодаря продвигаемым государством ценностям толерантности. ОАЭ, поддерживая многонациональное общество, создают идеальную среду для инвестиций в недвижимость. Этот город — пример открытости и взаимоуважения, идеальный для жизни и бизнеса.
+                                </p>
+                            </li>
+
+                            <li class="features-list__item flexible-taxation">
+                                <img src="./images/home/features/features-icon2.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    Гибкое<br> налогообложение
+                                </h3>
+
+                                <p class="features-list__text">
+                                    Дубай предлагает уникальные возможности для инвесторов в недвижимость. При покупке взимается единовременный сбор в 4% от стоимости объекта. Продавая недвижимость, вы не платите налог на прибыль. Арендодатели также освобождены от налога на доход.  Эти условия способствуют росту ваших инвестиций в недвижимость Дубая.
+                                </p>
+                            </li>
+
+                            <li class="features-list__item high-demand">
+                                <img src="./images/home/features/features-icon3.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    Высокий спрос на аренду
+                                </h3>
+
+                                <p class="features-list__text">
+                                    В 2023 году рынок аренды в Дубае вырос на 27,7%, с увеличением стоимости аренды квартир на 27,9% и вилл на 26,3%. Самые высокие ставки в Palm Jumeirah достигли 260,467 и 1,017,614 дирхамов для апартаментов и вилл соответственно. Годовые контракты выросли на 13,8% до 90,59% от общего числа. Продления аренды выросли на 30,7%, в то время как новые регистрации снизились на 13%
+                                </p>
+                            </li>
+
+                            <li class="features-list__item timely-delivery">
+                                <img src="./images/home/features/features-icon4.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    Своевременная сдача<br> объектов недвижимости
+                                </h3>
+
+                                <p class="features-list__text">
+                                    В Дубае гарантия своевременной сдачи объектов недвижимости закреплена использованием эскроу-счетов. С 2019 года Регуляторное агентство недвижимости Дубая (RERA) активизировало механизм банковских эскроу-счетов для совместно владеемых объектов, используя электронную систему Mollak. Это обеспечило значительный прогресс в управлении и реализации проектов.
+                                </p>
+                            </li>
+
+                            <li class="features-list__item finance-center">
+                                <img src="./images/home/features/features-icon5.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    Международный<br> финансовый центр
+                                </h3>
+
+                                <p class="features-list__text">
+                                    Дубай — один из самых передовых финансовых центров мира, обслуживающий рынки Ближнего Востока, Африки и Южной Азии (MEASA). С 2004 года он вырос, привлекая более 2200 компаний и 24000 сотрудников. В 2019 году Дубай вошел в топ-10 Глобального Индекса Финансовых Центров, утвердившись как ведущий финансовый хаб региона MEASA и MENA. Это делает Дубай не только центром бизнеса, но и привлекательным местом для инвестирования в недвижимость
+                                </p>
+                            </li>
+                        </ol>
+
+                        <div class="features-middle">
+                            <ul class="features-middle__list">
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">01</span>
+                                </li>
+
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">02</span>
+                                </li>
+
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">03</span>
+                                </li>
+
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">04</span>
+                                </li>
+
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">05</span>
+                                </li>
+
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">06</span>
+                                </li>
+
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">07</span>
+                                </li>
+
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">08</span>
+                                </li>
+
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">09</span>
+                                </li>
+
+                                <li class="features-middle__item">
+                                    <span class="features-middle__num">10</span>
+                                </li>
+                            </ul>
+
+                            <button class="section-item features-middle__btn" data-popup="consultation-popup">
+                                <span class="section-item__inner">Получить консультацию</span>
+                            </button>
+                        </div>
+
+                        <ol class="features-list features-right">
+                            <li class="features-list__item">
+                                <img src="./images/home/features/features-icon6.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    Безопасность
+                                </h3>
+
+                                <p class="features-list__text">
+                                    Дубай - воплощение безопасности и стабильности. ОАЭ признаны второй самой безопасной страной в мире, с индексом безопасности 84,9. Для инвесторов и жителей это означает низкий уровень преступности и гарантию сохранности их инвестиций, особенно в сфере недвижимости. Это делает Дубай идеальным выбором для жизни и ведения бизнеса.
+                                </p>
+                            </li>
+
+                            <li class="features-list__item stable-economy">
+                                <img src="./images/home/features/features-icon7.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    Стабильная<br> экономика
+                                </h3>
+
+                                <p class="features-list__text">
+                                    Экономика Дубая в 2023 году выросла на 3,2%, подтверждая его статус надежного и динамично развивающегося экономического центра. Стратегия диверсификации и инновации обеспечивает эмирату уверенный рост и яркие долгосрочные перспективы, делая его привлекательным для инвесторов и бизнеса
+                                </p>
+                            </li>
+
+                            <li class="features-list__item tourists-annually">
+                                <img src="./images/home/features/features-icon8.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    ~10 миллионов<br> туристов ежегодно
+                                </h3>
+
+                                <p class="features-list__text">
+                                    За первые девять месяцев 2023 года Дубай посетили 12,4 млн туристов. В первой половине года город привлек рекордное количество международных посетителей — 8,5 млн, что на 20% больше по сравнению с предыдущим годом. В первом квартале 2023 года Дубай принял 4,67 млн международных туристов, что на 17% больше, чем за аналогичный период 2022 года.
+                                </p>
+                            </li>
+
+                            <li class="features-list__item installments">
+                                <img src="./images/home/features/features-icon9.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    Беспроцентная<br> рассрочка в Дубае
+                                </h3>
+
+                                <p class="features-list__text">
+                                    Дубай предоставляет уникальные возможности для покупки недвижимости с беспроцентной рассрочкой. Застройщики в Дубае предлагают гибкие планы оплаты на весь период строительства, а также возможности рассрочки после получения ключей В 2023 году покупатели могут воспользоваться планами рассрочки до 10 лет, что делает финансирование покупки квартиры или виллы в Дубае доступными и выгодными для инвесторов.
+                                </p>
+                            </li>
+
+                            <li class="features-list__item assignment">
+                                <img src="./images/home/features/features-icon10.svg" alt="feature-icon" class="benefits-list__icon">
+
+                                <h3 class="features-list__title">
+                                    Переуступка
+                                </h3>
+
+                                <p class="features-list__text">
+                                    При покупке строящегося жилья, владельцы имеют возможность осуществить перепродажу без полной выплаты стоимости объекта. В частности, застройщики требуют выплату 30-40% от стоимости недвижимости перед её перепродажей.  Это предоставляет инвесторам гибкость и выгодные условия для перепродажи недвижимости.
+                                </p>
+                            </li>
+                        </ol>
+
+
+                        <div class="mobile-features swiper disabled">
+                            <div class="swiper-wrapper">
+                                <div class="mobile-features__wrapper swiper-slide">
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                Толерантность
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            Дубай - город, где толерантность не просто слово, а образ жизни, где более 200 национальностей и 80% иностранцы, живущие в гармонии благодаря продвигаемым государством ценностям толерантности. ОАЭ, поддерживая многонациональное общество, создают идеальную среду для инвестиций в недвижимость. Этот город — пример открытости и взаимоуважения, идеальный для жизни и бизнеса.
+                                        </p>
+                                    </div>
+
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon2.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                Гибкое налогообложение
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            Дубай предлагает уникальные возможности для инвесторов в недвижимость. При покупке взимается единовременный сбор в 4% от стоимости объекта. Продавая недвижимость, вы не платите налог на прибыль. Арендодатели также освобождены от налога на доход.&nbsp; Эти условия способствуют росту ваших инвестиций в недвижимость Дубая.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-features__wrapper swiper-slide">
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon3.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                Высокий спрос на аренду
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            В 2023 году рынок аренды в Дубае вырос на 27,7%, с увеличением стоимости аренды квартир на 27,9% и вилл на 26,3%. Самые высокие ставки в Palm Jumeirah достигли 260,467 и 1,017,614 дирхамов для апартаментов и вилл соответственно. Годовые контракты выросли на 13,8% до 90,59% от общего числа. Продления аренды выросли на 30,7%, в то время как новые регистрации снизились на 13%
+                                        </p>
+                                    </div>
+
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon4.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                Своевременная сдача объектов недвижимости
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            В Дубае гарантия своевременной сдачи объектов недвижимости закреплена использованием эскроу-счетов. С 2019 года Регуляторное агентство недвижимости Дубая (RERA) активизировало механизм банковских эскроу-счетов для совместно владеемых объектов, используя электронную систему Mollak. Это обеспечило значительный прогресс в управлении и реализации проектов.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-features__wrapper swiper-slide">
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon5.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                Международный финансовый центр
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            Дубай — один из самых передовых финансовых центров мира, обслуживающий рынки Ближнего Востока, Африки и Южной Азии (MEASA). С 2004 года он вырос, привлекая более 2200 компаний и 24000 сотрудников. В 2019 году Дубай вошел в топ-10 Глобального Индекса Финансовых Центров, утвердившись как ведущий финансовый хаб региона MEASA и MENA. Это делает Дубай не только центром бизнеса, но и привлекательным местом для инвестирования в недвижимость
+                                        </p>
+                                    </div>
+
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon6.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                Безопасность
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            Дубай - воплощение безопасности и стабильности. ОАЭ признаны второй самой безопасной страной в мире, с индексом безопасности 84,9. Для инвесторов и жителей это означает низкий уровень преступности и гарантию сохранности их инвестиций, особенно в сфере недвижимости. Это делает Дубай идеальным выбором для жизни и ведения бизнеса.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-features__wrapper swiper-slide">
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon7.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                Стабильная экономика
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            Экономика Дубая в 2023 году выросла на 3,2%, подтверждая его статус надежного и динамично развивающегося экономического центра. Стратегия диверсификации и инновации обеспечивает эмирату уверенный рост и яркие долгосрочные перспективы, делая его привлекательным для инвесторов и бизнеса
+                                        </p>
+                                    </div>
+
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon8.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                ~10 миллионов туристов ежегодно
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            За первые девять месяцев 2023 года Дубай посетили 12,4 млн туристов. В первой половине года город привлек рекордное количество международных посетителей — 8,5 млн, что на 20% больше по сравнению с предыдущим годом. В первом квартале 2023 года Дубай принял 4,67 млн международных туристов, что на 17% больше, чем за аналогичный период 2022 года.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-features__wrapper swiper-slide">
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon9.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                Беспроцентная рассрочка в Дубае
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            Дубай предоставляет уникальные возможности для покупки недвижимости с беспроцентной рассрочкой. Застройщики в Дубае предлагают гибкие планы оплаты на весь период строительства, а также возможности рассрочки после получения ключей В 2023 году покупатели могут воспользоваться планами рассрочки до 10 лет, что делает финансирование покупки квартиры или виллы в Дубае доступными и выгодными для инвесторов.
+                                        </p>
+                                    </div>
+
+                                    <div class="features-list__item">
+                                        <div class="mobile-features__top">
+                                            <img src="./images/home/features/features-icon10.svg" alt="feature-icon" class="benefits-list__icon">
+    
+                                            <h3 class="features-list__title">
+                                                Переуступка
+                                            </h3>
+                                        </div>
+
+                                        <p class="features-list__text">
+                                            При покупке строящегося жилья, владельцы имеют возможность осуществить перепродажу без полной выплаты стоимости объекта. В частности, застройщики требуют выплату 30-40% от стоимости недвижимости перед её перепродажей.  Это предоставляет инвесторам гибкость и выгодные условия для перепродажи недвижимости.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="features-buttons slider-buttons">
+                            <li class="cases-buttons__item">
+                                <button class="features-button__left slider-buttons__btn swiper-button-disabled">
+                                    <img src="images/common/slider-arrow-left.svg" alt="arrow">
+                                </button>
+                            </li>
+
+                            <li class="cases-buttons__item">
+                                <button class="features-button__right slider-buttons__btn">
+                                    <img src="images/common/slider-arrow-right.svg" alt="arrow">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="section-item features__mobile-btn" data-popup="consultation-popup">
+                        Получить консультацию
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="pricing">
+            <div class="container">
+                <div class="pricing__content">
+                    <div class="pricing-card pricing-card--left disabled">
+                        <span class="pricing-card__label">
+                            Резидентская виза на 2 года
+                        </span>
+
+                        <h3 class="pricing-card__title">
+                            от 205 000$
+                        </h3>
+
+                        <p class="pricing-card__text">
+                            Инвестиции в недвижимость ОАЭ стоимостью от 205 000 до 545 000 долларов США обеспечивают получение резидентской визы на 2 или 10 лет, предоставляя доступ к большинству прав граждан страны.
+                        </p>
+                    </div>
+
+                    <div class="pricing-desc disabled">
+                        <div class="pricing-desc__top">
+                            <img src="./images/home/pricing/desc-logo.svg" alt="">
+
+                            <div class="pricing-desc__top-items">
+                                <h3 class="pricing-desc__top-title">
+                                    ~8%  ROI
+                                </h3>
+
+                                <p class="pricing-desc__top-text">
+                                    в Дубае
+                                </p>
+                            </div>
+                        </div>
+
+                        <strong class="pricing-desc__subtitle">
+                            ~2,78 % ROI в Париже<br>
+                            ~4,17 % ROI в Лос-Анджелесе<br>
+                            ~3,27 %  ROI в Москве<br>
+                        </strong>
+
+                        <p class="pricing-desc__text">
+                            При этом стоимость недвижимости в Дубае ниже, что делает его недооцененным для инвестиций.<br><br>
+
+                            *Данные за 2023 год
+                        </p>
+                    </div>
+
+                    <div class="pricing-card pricing-card--right disabled">
+                        <span class="pricing-card__label">
+                            Резидентская виза на 10 лет
+                        </span>
+
+                        <h3 class="pricing-card__title">
+                            от 545 000$
+                        </h3>
+
+                        <p class="pricing-card__text">
+                            Становясь резидентом Дубая, вы получаете возможность открыть банковский счет, начать карьеру или основать собственный бизнес. Это также открывает доступ к высококачественным медицинским услугам и образованию мирового уровня для ваших детей, а также к участию в местных финансовых рынках. Резидентство в Дубае — это шаг к жизни, полной возможностей и привилегий.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="#" class="section-item pricing__link">
+                    <span class="section-item__inner">Узнать больше о ценообразовании</span>
+                </a>
+            </div>
+        </div>
+
+        <section class="about">
+            <div class="container about__container">
+                <div class="about__content">
+                    <div class="about__inner">
+                        <span class="about__label">
+                            Мы здесь, чтобы ваша мечта о доме стала реальностью!
+                        </span>
+
+                        <h2 class="title about__title">
+                            Admire Estate - почему выбрать нас?
+                        </h2>
+
+                        <p class="about__text">
+                            <span class="about__text-item">"Admire Estate"</span> выбрано не просто так. Название отражает наше восхищение: мы видим в каждом уголке недвижимости искусство, возможности и жизнь. Это не просто стены и перекрытия, это место, где сбываются мечты.
+
+                            Каждый клиент для нас — соавтор шедевра. Каждый сотрудник — член большой, теплой семьи, где каждый стремится к вершинам успеха, поддерживая и вдохновляя друг друга.
+
+                            Построение компании основано на доверии каждому члену семьи и честной работе с каждым клиентом.
+                        </p>
+
+                        <a href="#" class="section-item about__link">
+                            <span class="section-item__inner">Узнать больше о компании</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <picture>
+                <source srcset="./images/home/about/about-bg.avif" type="image/avif">
+                <img class="about__img" src="./images/home/about/about-bg.png" alt="about-bg">
+            </picture>
+        </section>
+
+        <section class="license">
+            <div class="container">
+                <div class="license__content">
+                    <h2 class="title license__title">
+                        Admire Home Real Estate L.L.C.
+                    </h2>
+
+                    <div class="license-items">
+                        <div class="license-items__desc">
+                            <h3 class="license-items__title">
+                                Осуществляет свою деятельность на основании лицензии: № 1149910
+                            </h3>
+
+                            <div class="license-items__card">
+                                Выдана государственным органом департаментом экономического развития Дубая, а также получено разрешение на ведение деятельности от RERA (регулирующее подразделений Земельного департамента Дубая) №33944, что гарантирует законность и прозрачность сделок.
+                            </div>
+
+                            <button class="license-items__btn" data-popup="license-popup">
+                                <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.09055 21.51C13.2105 27.63 21.3505 31 30.0005 31C38.6505 31 46.7905 27.63 52.9105 21.51L53.7105 20.71C53.8905 20.52 54.0005 20.27 54.0005 20C54.0005 19.73 53.8905 19.48 53.7105 19.29L52.9105 18.49C46.7905 12.37 38.6505 9 30.0005 9C21.3505 9 13.2105 12.37 7.09055 18.49L6.29055 19.29C5.90055 19.68 5.90055 20.31 6.29055 20.7L7.09055 21.51ZM8.51055 19.91C14.2505 14.16 21.8805 11 30.0005 11C38.1205 11 45.7505 14.16 51.4905 19.91L51.5805 20L51.4905 20.09C45.7505 25.84 38.1205 29 30.0005 29C21.8805 29 14.2505 25.84 8.51055 20.09L8.41055 20L8.51055 19.91Z" fill="#e4b63e" />
+                                    <path d="M30 27C33.86 27 37 23.86 37 20C37 16.14 33.86 13 30 13C26.14 13 23 16.14 23 20C23 23.86 26.14 27 30 27ZM30 15C32.76 15 35 17.24 35 20C35 22.76 32.76 25 30 25C27.24 25 25 22.76 25 20C25 17.24 27.24 15 30 15Z" fill="#e4b63e" />
+                                  </svg>
+                                Посмотреть лицензию
+                            </button>
+                        </div>
+
+                        <div class="license-items__certificate">
+                            <picture>
+                                <source srcset="./images/home/license/certificate.avif" type="image/avif">
+                                <img class="license-items__img" src="./images/home/license/certificate.png" alt="certificate" data-popup="license-popup">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup license-popup">
+                <div class="license-popup__wrapper">
+                    <button class="license-popup__close popup-close">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1.41528" y="7.62939e-05" width="28" height="2" rx="1" transform="rotate(45 1.41528 7.62939e-05)" fill="white"></rect>
+                            <rect x="21.2131" y="1.41422" width="28" height="2" rx="1" transform="rotate(135 21.2131 1.41422)" fill="white"></rect>
+                        </svg>
+                    </button>
+
+                    <img class="license-popup__img" src="./images/home/license/license-big.jpg" alt="certificate-big">
+                </div>
+            </div>
+        </section>
+
+        <section class="consultation">
+            <div class="container">
+                <div class="consultation__content">
+                    <h2 class="title consultation__title">
+                        Admire Services
+                    </h2>
+
+                    <p class="consultation__text">
+                        Всё, что вам нужно - у нас есть!
+                    </p>
+
+                    <ul class="consultation-list">
+                        <li class="consultation-list__item">
+                            <picture>
+                                <source srcset="./images/home/services/services-img.avif" type="image/avif">
+                                <img src="./images/home/services/services-img.jpg" alt="img" class="consultation-list__img">
+                            </picture>
+
+                            <span class="consultation-list__text">
+                                Трансфер и сопровождение
+                            </span>
+                        </li>
+
+                        <li class="consultation-list__item">
+                            <picture>
+                                <source srcset="./images/home/services/services-img2.avif" type="image/avif">
+                                <img src="./images/home/services/services-img2.jpg" alt="img" class="consultation-list__img">
+                            </picture>
+
+                            <span class="consultation-list__text">
+                                Помощь в получении Emirates ID
+                            </span>
+                        </li>
+
+                        <li class="consultation-list__item">
+                            <picture>
+                                <source srcset="./images/home/services/services-img3.avif" type="image/avif">
+                                <img src="./images/home/services/services-img3.jpg" alt="img" class="consultation-list__img">
+                            </picture>
+
+                            <span class="consultation-list__text">
+                                Открытие компании и расчётных счетов
+                            </span>
+                        </li>
+
+                        <li class="consultation-list__item">
+                            <picture>
+                                <source srcset="./images/home/services/services-img4.avif" type="image/avif">
+                                <img src="./images/home/services/services-img4.jpg" alt="img" class="consultation-list__img">
+                            </picture>
+
+                            <span class="consultation-list__text">
+                                Организация<br> досуга
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="section-item consultation__btn" data-popup="consultation-popup">
+                    <span class="section-item__inner">Получить консультацию</span>
+                </button>
+            </div>
+
+            <div class="popup consultation-popup">
+                <div class="popup-content">
+                    <button class="popup-content__close popup-close">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1.41528" y="7.62939e-05" width="28" height="2" rx="1" transform="rotate(45 1.41528 7.62939e-05)" fill="white" />
+                            <rect x="21.2131" y="1.41422" width="28" height="2" rx="1" transform="rotate(135 21.2131 1.41422)" fill="white" />
+                        </svg>
+                    </button>
+
+                    <h2 class="title popup-content__title">
+                        Консультация с экспертом
+                    </h2>
+
+                    <div class="expert-row">
+                        <div class="expert-row__start">
+                            <p class="expert-row__text">
+                                Наши эксперты обеспечат вас лучшими вариантами недвижимости — от инвестиций до выбора вашего нового жилья. Мы будем сопровождать вас на каждом этапе до и после получения ключей от вашего нового дома.
+                            </p>
+
+                            <form class="form">
+                                <ul class="form__inputs">
+                                    <li class="form__item">
+                                        <label for="name-popup">
+                                            <input type="text" id="name-popup" placeholder="Ваше имя" class="form__input">
+                                        </label>
+                                    </li>
+
+                                    <li class="form__item">
+                                        <label for="tel-popup">
+                                            <input type="tel" id="tel-popup" placeholder="Телефон" class="form__input">
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                <button type="submit" class="section-item form__submit">
+                                    <span class="section-item__inner">Получить консультацию</span>
+                                </button>
+
+                                <p class="form-text">
+                                    Отправляя данную форму вы соглашаетесь <a class="form-text__link" href="#">с политикой конфиденциальности</a>
+                                </p>
+                            </form>
+                        </div>
+
+                        <div class="expert-about">
+                            <picture>
+                                <source srcset="./images/home/expert/expert-img.avif" type="image/avif">
+                                <img class="expert-about__img" src="./images/home/expert/expert-img.png" alt="expert">
+                            </picture>
+
+                            <div class="expert-info">
+                                <h3 class="expert-info__name">
+                                    Максим Гришко
+                                </h3>
+
+                                <p class="expert-info__text">
+                                    Основатель компании Admire Estate, сертифицированный брокер ОАЭ с 5-летним успешным опытом работы в недвижимости.
+                                </p>
+
+                                <p class="expert-info__languages">
+                                    Языки: Русский, Английский
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reliability">
+            <div class="container">
+                <div class="reliability__content">
+                    <h2 class="title reliability__title">
+                        С нами надёжно инвестировать
+                    </h2>
+
+                    <div class="reliability__top-card">
+                        <div class="reliability__top-items">
+                            <picture>
+                                <source srcset="./images/home/reliability/reliability-img.avif" type="image/avif">
+                                <img class="reliability__top-img" src="./images/home/reliability/reliability-img.png" alt="img">
+                            </picture>
+                        </div>
+
+                        <div class="reliability__top-desc">
+                            <h3 class="reliability__top-title">
+                                С нами клиент<br> не переплачивает
+                            </h3>
+
+                            <p class="reliability__top-text">
+                                В нашей работе с вами нет скрытых расходов.
+                                Если вы решите отказаться от покупки, мы не выставим вам счет.
+                                За все расходы, связанные с выбором идеального объекта недвижимости, отвечает застройщик, покрывая их из своего маркетингового бюджета.
+                                Это позволяет нам сохранять независимость, честно и объективно подходить к решению ваших задач, предлагая только лучшие варианты недвижимости, подходящие именно вам!
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul class="reliability-list">
+                        <li class="reliability-list__item">
+                            <h4 class="reliability-list__title">
+                                Превосходный клиентский сервис
+                            </h4>
+                            <p class="reliability-list__text">
+                                Мы предоставляем полный спектр услуг высочайшего качества. Скорость выполнения на равне со скорость реактивного самолёта.
+                            </p>
+                            <img src="./images/home/reliability/reliability-icon.svg" alt="icon" class="reliability-list__icon">
+                        </li>
+                        <li class="reliability-list__item">
+                            <h4 class="reliability-list__title">
+                                Крепкие партнёрские связи
+                            </h4>
+                            <p class="reliability-list__text">
+                                Мы сотрудничаем с лучшими застройщиками и сервисами всего Дубая, чтобы ваше пребывание здесь стало незабываемым.
+                            </p>
+                            <img src="./images/home/reliability/reliability-icon.svg" alt="icon" class="reliability-list__icon">
+                        </li>
+                        <li class="reliability-list__item">
+                            <h4 class="reliability-list__title">
+                                Собственный аналитический отдел
+                            </h4>
+                            <p class="reliability-list__text">
+                                Наши аналитики одни из лучших в Арабских Эмиратах. Основываясь на огромной базе данных мы подбираем лучший инвестиционный объект для вас!
+                            </p>
+                            <img src="./images/home/reliability/reliability-icon.svg" alt="icon" class="reliability-list__icon">
+                        </li>
+                        <li class="reliability-list__item">
+                            <h4 class="reliability-list__title">
+                                Помогаем с переводом денежных средств
+                            </h4>
+                            <p class="reliability-list__text">
+                                Вам больше не нужно беспокоиться о потере части капитала - мы имеем партнёрские связи в любой точке мира и без процентов помогаем перевести ваш капитал.
+                            </p>
+                            <img src="./images/home/reliability/reliability-icon.svg" alt="icon" class="reliability-list__icon">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cases">
+            <div class="container">
+                <div class="cases__content">
+                    <h2 class="title cases__title">
+                        Кейсы
+                    </h2>
+
+                    <p class="cases__text">
+                        Примеры инвестиционных объектов которые наша компания приобретала вместе с инвесторами и получала прибыль:
+                    </p>
+
+                    <div class="cases__slider-wrapper">
+                        <button class="cases__slider-btn cases__slider-left">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.288243 8.69461L7.29624 15.7126C7.70424 16.0958 8.32824 16.0958 8.71224 15.7126C9.09624 15.3293 9.09624 14.6826 8.71224 14.2994L2.40024 8L8.71224 1.7006C9.09624 1.29341 9.09624 0.670659 8.71224 0.287425C8.32824 -0.0958084 7.70424 -0.0958084 7.29624 0.287425L0.288243 7.28144C-0.0957569 7.68862 -0.0957569 8.31138 0.288243 8.69461Z" fill="#CBCBCB" />
+                            </svg>
+                        </button>
+
+                        <div class="cases-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="cases-slider__item swiper-slide">
+                                    <div class="cases-slider__desc">
+                                        <h3 class="cases-slider__title">
+                                            Апартаменты:
+                                            Central Park Lauren
+                                        </h3>
+
+                                        <ul class="cases-apartments">
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Клиент:
+                                                </strong>
+                                                Евгений
+                                            </li>
+
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Цена покупки:
+                                                </strong>
+                                                1 503 000 AED
+                                            </li>
+
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Клиент оплатил:
+                                                </strong>
+                                                44% + OQOOD = 667 000 AED
+                                            </li>
+
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Клиент получил:
+                                                </strong>
+                                                Чек на 900 000 AED
+                                            </li>
+
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Цена продажи:
+                                                </strong>
+                                                1 800 000 AED
+                                            </li>
+                                        </ul>
+
+                                        <a href="#" class="cases-slider__link">
+                                            <img src="images/home/cases/cases-link-icon.svg" alt="icon">
+                                            Заказать персональное предложение
+                                        </a>
+                                    </div>
+
+                                    <div class="cases-slider__image-wrapper">
+                                        <picture>
+                                            <source srcset="./images/home/cases/cases-slider-img.avif"
+                                                    type="image/avif">
+                                            <img class="cases-slider__img"
+                                                 src="./images/home/cases/cases-slider-img.jpg" alt="img">
+                                        </picture>
+
+                                        <div class="cases-circle">
+                                            <img class="cases-circle__icon"
+                                                 src="./images/home/cases/cases-circle-icon.svg" alt="icon">
+                                            <ul class="cases-circle__list">
+                                                <li class="cases-circle__item">
+                                                    <strong class="cases-circle__label">Прибыль:</strong>
+
+                                                    <strong class="cases-circle__income">
+                                                        233 000 AED
+                                                    </strong>
+                                                </li>
+                                                <li class="cases-circle__item">
+                                                    <strong class="cases-circle__label">Доход за год:</strong>
+
+                                                    <strong class="cases-circle__income">
+                                                        35%
+                                                    </strong>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cases-slider__item swiper-slide">
+                                    <div class="cases-slider__desc">
+                                        <h3 class="cases-slider__title">
+                                            Апартаменты:
+                                            Central Park Lauren
+                                        </h3>
+
+                                        <ul class="cases-apartments">
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Клиент:
+                                                </strong>
+                                                Евгений
+                                            </li>
+
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Цена покупки:
+                                                </strong>
+                                                1 503 000 AED
+                                            </li>
+
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Клиент оплатил:
+                                                </strong>
+                                                44% + OQOOD = 667 000 AED
+                                            </li>
+
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Клиент получил:
+                                                </strong>
+                                                Чек на 900 000 AED
+                                            </li>
+
+                                            <li class="cases-apartments__item">
+                                                <strong class="cases-apartments__label">
+                                                    Цена продажи:
+                                                </strong>
+                                                1 800 000 AED
+                                            </li>
+                                        </ul>
+
+                                        <a href="#" class="cases-slider__link">
+                                            <img src="images/home/cases/cases-link-icon.svg" alt="icon">
+                                            Заказать персональное предложение
+                                        </a>
+                                    </div>
+
+                                    <div class="cases-slider__image-wrapper">
+                                        <picture>
+                                            <source srcset="./images/home/cases/cases-slider-img.avif"
+                                                    type="image/avif">
+                                            <img class="cases-slider__img"
+                                                 src="./images/home/cases/cases-slider-img.jpg" alt="img">
+                                        </picture>
+
+                                        <div class="cases-circle">
+                                            <img class="cases-circle__icon"
+                                                 src="./images/home/cases/cases-circle-icon.svg" alt="icon">
+                                            <ul class="cases-circle__list">
+                                                <li class="cases-circle__item">
+                                                    <strong class="cases-circle__label">Прибыль:</strong>
+
+                                                    <strong class="cases-circle__income">
+                                                        233 000 AED
+                                                    </strong>
+                                                </li>
+                                                <li class="cases-circle__item">
+                                                    <strong class="cases-circle__label">Доход за год:</strong>
+
+                                                    <strong class="cases-circle__income">
+                                                        35%
+                                                    </strong>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="cases-buttons slider-buttons">
+                            <li class="cases-buttons__item">
+                                <button class="cases__slider-left slider-buttons__btn">
+                                    <img src="images/common/slider-arrow-left.svg" alt="arrow">
+                                </button>
+                            </li>
+
+                            <li class="cases-buttons__item">
+                                <button class="cases__slider-right slider-buttons__btn">
+                                    <img src="images/common/slider-arrow-right.svg" alt="arrow">
+                                </button>
+                            </li>
+                        </ul>
+
+                        <button class="cases__slider-btn cases__slider-right">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.71176 7.30539L1.70376 0.287424C1.29576 -0.09581 0.671755 -0.09581 0.287755 0.287424C-0.0962448 0.670658 -0.0962448 1.31736 0.287755 1.7006L6.59976 8L0.287756 14.2994C-0.0962442 14.7066 -0.0962442 15.3293 0.287756 15.7126C0.671756 16.0958 1.29576 16.0958 1.70376 15.7126L8.71176 8.71856C9.09576 8.31138 9.09576 7.68862 8.71176 7.30539Z" fill="#CBCBCB" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="services__content">
+                    <h2 class="title services__title">
+                        Наши услуги
+                    </h2>
+
+                    <p class="services__text">
+                        Всё, что вам нужно - у нас есть!
+                    </p>
+
+                    <ul class="services-list">
+                        <li class="services-list__item">
+                            <a href="#" class="services-list__link">
+                                Покупка
+                            </a>
+                        </li>
+                        <li class="services-list__item">
+                            <a href="#" class="services-list__link">
+                                Продажа
+                            </a>
+                        </li>
+                        <li class="services-list__item">
+                            <a href="#" class="services-list__link">
+                                Аренда
+                            </a>
+                        </li>
+                        <li class="services-list__item">
+                            <a href="#" class="services-list__link">
+                                Инвестиции
+                            </a>
+                        </li>
+                        <li class="services-list__item">
+                            <a href="#" class="services-list__link">
+                                Управление недвижимостью
+                            </a>
+                        </li>
+                        <li class="services-list__item">
+                            <a href="#" class="services-list__link">
+                                Финансовая консультация
+                            </a>
+                        </li>
+                        <li class="services-list__item">
+                            <a href="#" class="services-list__link">
+                                Визовый сервис
+                            </a>
+                        </li>
+                        <li class="services-list__item">
+                            <a href="#" class="services-list__link">
+                                Оплата криптовалютой
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="section-item services__link">
+                        <span class="section-item__inner">Узнать больше</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="buy">
+            <div class="container">
+                <div class="buy__content">
+                    <h2 class="title buy__title">
+                        Где лучше купить сейчас?
+                    </h2>
+
+                    <div class="buy-list swiper">
+                        <div class="swiper-wrapper">
+                            <div class="buy-list__item swiper-slide">
+                                <picture>
+                                    <source srcset="./images/home/buy/buy-img.avif" type="image/avif">
+                                    <img src="./images/home/buy/buy-img.jpg" alt="img" class="buy-list__img">
+                                </picture>
+
+                                <div class="buy-list__top">
+                                    <h3 class="buy-list__title">
+                                        Nikki Beach Residences
+                                    </h3>
+
+                                    <ul class="buy-options">
+                                        <li class="buy-options__item">
+                                            <img class="buy-options__icon" src="./images/home/buy/option-icon.svg" alt="icon">
+                                            Апартаменты, Дуплексы и Пентхаусы
+                                        </li>
+
+                                        <li class="buy-options__item">
+                                            <img class="buy-options__icon" src="./images/home/buy/option-icon2.svg" alt="icon">
+                                            594 м² - 2787 м²
+                                        </li>
+                                    </ul>
+
+                                    <div class="buy-list__category">
+                                        Off-Plan
+                                    </div>
+
+                                    <p class="buy-list__text">
+                                        Rosso Bay Residences — свежий анонс курортного комплекса в активно застраиваемом элитном кластере на Al Marjan Island в Рас-эль-Хайме от застройщика Aldar Properties. В эксклюзивном проекте будут представлены брендированные резиденции с 1–4 спальнями. Вы можете выбрать как меблированную недвижимость, так и без мебели.
+                                    </p>
+                                </div>
+
+                                <a href="#" class="buy-list__link">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="buy-list__item swiper-slide">
+                                <picture>
+                                    <source srcset="./images/home/buy/buy-img2.avif" type="image/avif">
+                                    <img src="./images/home/buy/buy-img2.jpg" alt="img" class="buy-list__img">
+                                </picture>
+
+                                <div class="buy-list__top">
+                                    <h3 class="buy-list__title">
+                                        Rosso Bay Residences
+                                    </h3>
+
+                                    <ul class="buy-options">
+                                        <li class="buy-options__item">
+                                            <img class="buy-options__icon" src="./images/home/buy/option-icon.svg" alt="icon">
+                                            Апартаменты, Дуплексы и Пентхаусы
+                                        </li>
+
+                                        <li class="buy-options__item">
+                                            <img class="buy-options__icon" src="./images/home/buy/option-icon2.svg" alt="icon">
+                                            594 м² - 2787 м²
+                                        </li>
+                                    </ul>
+
+                                    <div class="buy-list__category">
+                                        Off-Plan
+                                    </div>
+
+                                    <p class="buy-list__text">
+                                        Rosso Bay Residences — свежий анонс курортного комплекса в активно застраиваемом элитном кластере на Al Marjan Island в Рас-эль-Хайме от застройщика Aldar Properties. В эксклюзивном проекте будут представлены брендированные резиденции с 1–4 спальнями. Вы можете выбрать как меблированную недвижимость, так и без мебели.
+                                    </p>
+                                </div>
+
+                                <a href="#" class="buy-list__link">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="buy-list__item swiper-slide">
+                                <picture>
+                                    <source srcset="./images/home/buy/buy-img3.avif" type="image/avif">
+                                    <img src="./images/home/buy/buy-img3.jpg" alt="img" class="buy-list__img">
+                                </picture>
+
+                                <div class="buy-list__top">
+                                    <h3 class="buy-list__title">
+                                        Ava At Palm Jumeirah
+                                    </h3>
+
+                                    <ul class="buy-options">
+                                        <li class="buy-options__item">
+                                            <img class="buy-options__icon" src="./images/home/buy/option-icon.svg" alt="icon">
+                                            594 м² - 2787 м²
+                                        </li>
+
+                                        <li class="buy-options__item">
+                                            <img class="buy-options__icon" src="./images/home/buy/option-icon2.svg" alt="icon">
+                                            594 м² - 2787 м²
+                                        </li>
+                                    </ul>
+
+                                    <div class="buy-list__category">
+                                        Off-Plan
+                                    </div>
+
+                                    <p class="buy-list__text">
+                                        Сообщество AVA at Palm Jumeirah от Omniyat включает уникальную
+                                        коллекцию из 17 роскошных апартаментов с 3, 4 и 5 спальнями. На одном этаже располагается не более одной резиденции с просторной террасой, частным бассейном. Также в AVA at Palm Jumeirah будет создан единственный
+                                        в своем роде трехэтажный пентхаус с атриумом на каждом этаже и огромной
+                                        террасой с двумя бассейнами infinity на крыше. Комплекс находится
+                                        под управлением Dorchester Collection.
+                                    </p>
+                                </div>
+
+                                <a href="#" class="buy-list__link">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="buy-buttons slider-buttons">
+                        <li class="buy-buttons__item">
+                            <button class="buy-slider__prev slider-buttons__btn">
+                                <img src="images/common/slider-arrow-left.svg" alt="arrow">
+                            </button>
+                        </li>
+
+                        <li class="buy-buttons__item">
+                            <button class="buy-slider__next slider-buttons__btn">
+                                <img src="images/common/slider-arrow-right.svg" alt="arrow">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="expert">
+            <div class="container">
+                <div class="expert__content">
+                    <h2 class="title expert__title">
+                        Консультация с экспертом
+                    </h2>
+
+                    <div class="expert-row">
+                        <div class="expert-row__start">
+                            <p class="expert-row__text">
+                                Наши эксперты обеспечат вас лучшими вариантами недвижимости — от инвестиций до выбора вашего нового жилья. Мы будем сопровождать вас на каждом этапе до и после получения ключей от вашего нового дома.
+                            </p>
+
+                            <form class="form">
+                                <ul class="form__inputs">
+                                    <li class="form__item">
+                                        <label for="name-popup">
+                                            <input type="text" id="name" placeholder="Ваше имя" class="form__input">
+                                        </label>
+                                    </li>
+
+                                    <li class="form__item">
+                                        <label for="tel-popup">
+                                            <input type="tel" id="tel" placeholder="Телефон" class="form__input">
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                <button type="submit" class="section-item form__submit">
+                                    <span class="section-item__inner">Получить консультацию</span>
+                                </button>
+
+                                <p class="form-text">
+                                    Отправляя данную форму вы соглашаетесь <a class="form-text__link" href="#">с политикой конфиденциальности</a>
+                                </p>
+                            </form>
+                        </div>
+
+                        <div class="expert-about">
+                            <picture>
+                                <source srcset="./images/home/expert/expert-img.avif" type="image/avif">
+                                <img class="expert-about__img" src="./images/home/expert/expert-img.png" alt="expert">
+                            </picture>
+
+                            <div class="expert-info">
+                                <h3 class="expert-info__name">
+                                    Максим Гришко
+                                </h3>
+
+                                <p class="expert-info__text">
+                                    Основатель компании Admire Estate, сертифицированный брокер ОАЭ с 5-летним успешным опытом работы в недвижимости.
+                                </p>
+
+                                <p class="expert-info__languages">
+                                    Языки: Русский, Английский
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer-top">
+                    <div class="footer-top__start">
+                        <a href="#" class="footer-top__logo">
+                            <img src="./images/common/logo.svg" alt="logo">
+                        </a>
+
+                        <a href="tel:+97144286162" class="footer-top__tel">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.9357 15.6684L18.8439 14.1576C17.7716 13.372 16.3067 13.4853 15.3627 14.4296L14.3961 15.3965C13.9279 15.8648 13.2181 16.0083 12.6442 15.744C10.2051 14.626 8.38519 12.8054 7.25247 10.3428C6.98817 9.7687 7.12409 9.05862 7.59983 8.59027L8.55887 7.63091C9.5028 6.68665 9.61607 5.22116 8.83827 4.14093L7.32798 2.05602C6.80693 1.33083 6.01403 0.953125 5.19092 0.953125C4.60946 0.953125 4.00534 1.14198 3.46164 1.52723C1.30193 3.0456 0.410855 5.83304 1.28682 8.28811C3.62777 14.8752 8.11333 19.385 14.6076 21.7041C15.257 21.9383 15.9291 22.044 16.5936 22.044C18.489 22.044 20.3316 21.1375 21.4643 19.5285L21.5549 19.4001C22.4007 18.2066 22.1213 16.5296 20.9357 15.6684Z" fill="white"/>
+                            </svg>
+                            +971 4 428 6162
+                        </a>
+
+                        <ul class="footer-social">
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                                        <path fill="#E7E4DE" d="M19.175 15.548c.325.169.533.26.598.39.078.143.052.793-.273 1.534-.26.728-1.612 1.43-2.21 1.456-.598.026-.611.468-3.848-.949s-5.187-4.875-5.343-5.096c-.156-.221-1.248-1.794-1.196-3.393.065-1.586.897-2.34 1.235-2.652.312-.338.663-.377.884-.338h.611c.195 0 .468-.078.715.585l.897 2.431c.078.169.13.364.013.572l-.351.533-.507.546c-.156.156-.338.325-.156.65.156.338.806 1.417 1.716 2.314 1.183 1.144 2.223 1.521 2.535 1.69.312.182.507.156.702-.052l1.053-1.222c.247-.325.455-.247.754-.143l2.171 1.144ZM13 0a13 13 0 1 1 0 26 12.96 12.96 0 0 1-6.955-2.015L0 26l2.015-6.045A12.96 12.96 0 0 1 0 13 13 13 0 0 1 13 0Zm0 2.6A10.4 10.4 0 0 0 2.6 13c0 2.236.702 4.303 1.898 5.993L3.25 22.75l3.757-1.248A10.335 10.335 0 0 0 13 23.4a10.4 10.4 0 1 0 0-20.8Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="22" fill="none" viewBox="0 0 29 22">
+                                        <path fill="#E7E4DE" d="m10.91 20.669.45-6.153L23.718 4.45c.547-.451-.113-.67-.837-.277L7.627 12.887l-6.596-1.891c-1.416-.364-1.432-1.251.321-1.891L27.048.145c1.175-.48 2.301.26 1.85 1.89L24.522 20.67c-.306 1.324-1.19 1.644-2.413 1.033l-6.662-4.451-3.202 2.807c-.37.335-.675.611-1.335.611Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="footer-social__item">
+                                <a href="#" class="footer-social__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="none" viewBox="0 0 28 24">
+                                        <path fill="#E7E4DE" d="M25.2 6 14 13.5 2.8 6V3L14 10.5 25.2 3v3Zm0-6H2.8C1.246 0 0 1.335 0 3v18c0 .796.295 1.559.82 2.121A2.709 2.709 0 0 0 2.8 24h22.4c.743 0 1.455-.316 1.98-.879A3.11 3.11 0 0 0 28 21V3c0-1.665-1.26-3-2.8-3Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <nav class="footer-nav">
+                        <div class="footer-nav__column">
+                            <h3 class="footer-nav__title">
+                                Недвижимость
+                            </h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Апартаменты
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        DAMAC
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Dubai Marina
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Покупка
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Дуплексы
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="footer-nav__bottom-link">
+                                Вся недвижимость
+                                <img src="./images/footer/arrow-right.svg" alt="arrow" class="footer-nav__arrow">
+                            </a>
+                        </div>
+                        <div class="footer-nav__column">
+                            <h3 class="footer-nav__title">
+                                Застройщики
+                            </h3>
+
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Emaar
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Downtown Dubai
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Продажа
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Пентхаусы
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Meraas
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="footer-nav__bottom-link">
+                                ВСЕ ЗАСТРОЙЩИКИ
+                                <img src="./images/footer/arrow-right.svg" alt="arrow" class="footer-nav__arrow">
+                            </a>
+                        </div>
+
+                        <div class="footer-nav__column">
+                            <h3 class="footer-nav__title">
+                                Районы
+                            </h3>
+
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Business Bay
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Аренда
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Виллы
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Dubai Properties
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Dubailand
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="footer-nav__bottom-link">
+                                ВСЕ Районы
+                                <img src="./images/footer/arrow-right.svg" alt="arrow" class="footer-nav__arrow">
+                            </a>
+                        </div>
+
+                        <div class="footer-nav__column">
+                            <h3 class="footer-nav__title">
+                                Услуги
+                            </h3>
+
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Admire Flip
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Таунхаусы
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Select Group
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Saadiyat Island
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Ипотека
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="footer-nav__bottom-link">
+                                ВСЕ Услуги
+                                <img src="./images/footer/arrow-right.svg" alt="arrow" class="footer-nav__arrow">
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-bottom__copyright">
+                        © Все права защищены
+                    </p>
+
+                    <ul class="footer-bottom__links">
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link">
+                                Блог
+                            </a>
+                        </li>
+
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link">
+                                Политика конфиденциальности
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/modules/splide/splide.min.js"></script>
+    <script src="./js/modules/splide/splide-extension-auto-scroll.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

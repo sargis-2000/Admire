@@ -1,0 +1,91 @@
+.home-hero {
+    position: relative;
+    z-index: 1;
+    margin-top: clamp(9rem, 6.635rem + 10.51vw, 19.25rem);
+
+    @include media(1330px) {
+        margin-top: unset;
+    }
+
+    &__title {
+        @include media(720px) {
+            text-align: center;
+        }
+    }
+
+    &__content {
+        max-width: 969px;
+        @include flex(109px);
+        padding-left: 15px;
+
+        @include media(1330px) {
+            padding: 0;
+        }
+    }
+
+    &__left {
+        @include flexCol(14px);
+        align-items: center;
+
+        @include media(1330px) {
+            display: none;
+        }
+    }
+
+    &__label {
+        display: block;
+        writing-mode: vertical-lr;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #fff;
+    }
+
+    &__line {
+        display: block;
+        width: 1px;
+        height: 73px;
+        background-color: #aaa;
+    }
+
+    &__social {
+        @include flexCol(35px);
+    }
+
+    &__text {
+        max-width: 616px;
+        margin-top: clamp(0.938rem, 0.505rem + 1.92vw, 2.813rem);
+        margin-bottom: clamp(1.375rem, 0.971rem + 1.79vw, 3.125rem);
+        font-weight: 400;
+        font-size: clamp(0.875rem, 0.788rem + 0.38vw, 1.25rem);
+        line-height: 120%;
+        color: #fff;
+
+        @include media(720px) {
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        max-width: 281px;
+
+        @include media(1320px) {
+            max-width: 320px;
+        }
+
+        @include media(430px) {
+            max-width: unset;
+        }
+    }
+
+    &__link {
+        path {
+            transition: .3s ease-out;
+        }
+
+        &:hover path {
+            fill: #E4B63E;
+        }
+    }
+}

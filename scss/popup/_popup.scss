@@ -1,0 +1,55 @@
+@import '../base/vars';
+
+.popup {
+    @include fixedFull;
+    display: flex;
+    background: #000000c6;
+
+    z-index: 100;
+    padding: 20px;
+    overflow-y: auto;
+    transition: .3s ease-out;
+    opacity: 0;
+    visibility: hidden;
+
+    &.active {
+        opacity: unset;
+        visibility: unset;
+    }
+}
+
+.popup-content {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    padding: clamp(1.25rem,.615rem + 2.82vw,4rem) 
+    clamp(1.25rem,.24rem + 4.49vw,5.625rem) 0 
+    clamp(1.25rem,.24rem + 4.49vw,5.625rem);
+    background: #0f0f0f;
+    border-radius: 15px;
+    margin: auto;
+    border: 1px solid rgba(222, 206, 172, .5);
+    overflow: hidden;
+
+    &__close {
+        width: clamp(1rem, 0.913rem + 0.38vw, 1.375rem);
+        height: clamp(1rem, 0.913rem + 0.38vw, 1.375rem);
+        position: absolute;
+        top: clamp(0.625rem, 0.481rem + 0.64vw, 1.25rem);
+        right: clamp(0.625rem, 0.423rem + 0.9vw, 1.5rem);
+        font-size: 0;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: clamp(.938rem, .433rem + 2.24vw, 3.125rem);
+    }
+
+    @include media(1830px) {
+        zoom: 75%;
+    }
+
+    @include media(1400px) {
+        zoom: unset;
+    }
+}

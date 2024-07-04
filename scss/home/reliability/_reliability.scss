@@ -1,0 +1,135 @@
+@import "../../base/vars";
+
+.reliability {
+  margin-bottom: clamp(5rem, 2.837rem + 9.62vw, 14.375rem);
+
+  &__title {
+    text-align: center;
+    margin-bottom: clamp(1.25rem, 0.817rem + 1.92vw, 3.125rem);
+  }
+
+  &__content {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__top-items {
+    position: relative;
+    margin-left: clamp(2.5rem, 1.202rem + 5.77vw, 8.125rem);
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 262px;
+      height: 305px;
+      background: url("/images/home/reliability/reliability-logo.png") no-repeat;
+      left: -30px;
+      bottom: 46px;
+      background-size: contain;
+
+      @include media(1330px) {
+        width: clamp(7.625rem, 5.606rem + 8.97vw, 16.375rem);
+        height: clamp(8.938rem, 6.601rem + 10.38vw, 19.063rem);
+        bottom: 20px;
+      }
+
+      @include media(1152px) {
+        left: -20px;
+      }
+    }
+  }
+
+  &__top-card {
+    @include flex(clamp(1.063rem, 0.601rem + 2.05vw, 3.063rem));
+    border-radius: 15px;
+    border: 1px solid #deceac;
+
+    @include media(1152px) {
+      @include flexColumnReverse;
+    }
+  }
+
+  &__top-img {
+    position: relative;
+  }
+
+  &__top-desc {
+    @include flexCol(clamp(0.625rem, 0.553rem + 0.32vw, 0.938rem));
+    justify-content: center;
+    max-width: 637px;
+    flex: 1;
+    padding: 38px 29px 38px 0;
+
+    @include media(1152px) {
+      padding: 20px 20px 0 20px;
+    }
+  }
+
+  &__top-title {
+    font-family: $second-family;
+    font-weight: 500;
+    font-size: clamp(1.375rem, 1.087rem + 1.28vw, 2.625rem);
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #deceac;
+  }
+
+  &__top-text {
+    font-size: clamp(0.75rem, 0.663rem + 0.38vw, 1.125rem);
+    font-weight: 400;
+    line-height: 150%;
+    color: #ecedf4;
+  }
+}
+
+.reliability-list {
+  @include grid(4);
+  gap: clamp(1.25rem, 1.106rem + 0.64vw, 1.875rem);
+  margin-top: clamp(1.25rem, 1.106rem + 0.64vw, 1.875rem);
+
+  @include media(1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media(920px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media(530px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 15px;
+    padding: clamp(1.25rem, 1.106rem + 0.64vw, 1.875rem) 20px 20px;
+    border: 1px solid #deceac;
+    flex: 1;
+  }
+
+  &__title {
+    font-family: $second-family;
+    font-weight: 500;
+    font-size: clamp(1.375rem, 1.346rem + 0.13vw, 1.5rem);
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #deceac;
+    margin-bottom: clamp(0.625rem, 0.423rem + 0.9vw, 1.5rem);
+  }
+
+  &__text {
+    width: calc(100% - 66px);
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.692rem + 0.26vw, 1rem);
+    line-height: 150%;
+    color: #ecedf4;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: clamp(2.25rem, 2.063rem + 0.83vw, 3.063rem);
+    height: clamp(2.25rem, 2.063rem + 0.83vw, 3.063rem);
+  }
+}

@@ -1,0 +1,159 @@
+@import "../../base/vars";
+
+.license {
+  margin-bottom: clamp(5rem, 2.837rem + 9.62vw, 14.375rem);
+
+  &__content {
+    position: relative;
+    max-width: 1438px;
+    margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background: url("/images/home/license/license-logo.png") no-repeat;
+      background-size: contain;
+      width: clamp(16.25rem, 14.173rem + 9.23vw, 25.25rem);
+      height: clamp(18.75rem, 16.313rem + 10.83vw, 29.313rem);
+      left: 90px;
+      top: 114px;
+
+      @include media(1024px) {
+        top: unset;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: clamp(1.25rem, 0.471rem + 3.46vw, 4.625rem);
+  }
+}
+
+.license-items {
+  position: relative;
+  @include flex(clamp(1.875rem, 0.159rem + 7.63vw, 9.313rem));
+
+  @include media(1178px) {
+    @include flexColumnReverse;
+    align-items: center;
+  }
+
+  &__desc {
+    flex: 1;
+  }
+
+  &__title {
+    font-family: $second-family;
+    font-weight: 500;
+    font-size: clamp(1.375rem, 1.087rem + 1.28vw, 2.625rem);
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #deceac;
+    margin-bottom: clamp(1.25rem, 0.962rem + 1.28vw, 2.5rem);
+  }
+
+  &__card {
+    padding: clamp(1.25rem, 1.106rem + 0.64vw, 1.875rem);
+    border-radius: 15px;
+    border: 1px solid #deceac;
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.692rem + 0.26vw, 1rem);
+    line-height: 150%;
+    color: #ecedf4;
+    margin-bottom: clamp(1.25rem, 0.846rem + 1.79vw, 3rem);
+  }
+
+  &__btn {
+    max-width: 383px;
+    @include flex(4px);
+    align-items: center;
+    font-weight: 500;
+    font-size: clamp(1rem, 0.942rem + 0.26vw, 1.25rem);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #e4b63e;
+    transition: .3s ease-out;
+
+    path {
+      transition: .3s ease-out;
+    }
+
+    &:hover {
+      color: #deceac;
+    }
+
+    &:hover path {
+      fill: #deceac;
+    }
+
+    img {
+      @include media(1024px) {
+        max-width: 36px;
+      }
+    }
+  }
+
+  &__img {
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}
+
+.license-popup {
+  //@include media(710px) {
+  //  flex-direction: column;
+  //  justify-content: center;
+  //}
+
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    max-height: 1240px;
+
+    @include media(710px) {
+      height: 50%;
+    }
+
+    @include media(430px) {
+      transform: translateY(20%);
+    }
+  }
+
+  &__close {
+    display: block;
+    position: absolute;
+    width: clamp(1rem, .913rem + .38vw, 1.375rem);
+    height: clamp(1rem, .913rem + .38vw, 1.375rem);
+    margin: 0 0 10px auto;
+    top: 0;
+    right: -40px;
+
+    @include media(832px) {
+      right: -25px;
+    }
+
+    @include media(790px) {
+      right: -19px;
+    }
+
+    @include media(710px) {
+      right: 0;
+      top: -20px;
+    }
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+
+    @include media(710px) {
+      height: auto;
+    }
+  }
+}

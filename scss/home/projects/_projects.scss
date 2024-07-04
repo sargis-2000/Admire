@@ -1,0 +1,192 @@
+@import "../../base/vars";
+
+.projects {
+  position: relative;
+  transform: translateY(-200px);
+  // margin-bottom: clamp(5rem, 2.837rem + 9.62vw, 14.375rem);
+
+  @include media(1330px) {
+    transform: translateY(-105px);
+    margin-bottom: 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: clamp(1.25rem, 0.817rem + 1.92vw, 3.125rem);
+  }
+
+  &__link {
+    position: relative;
+    z-index: 1;
+    max-width: 283px;
+    display: block;
+    margin: clamp(1.25rem, 0.962rem + 1.28vw, 2.5rem) auto 0;
+    background-color: transparent;
+
+    @include media(435px) {
+      max-width: unset;
+      width: calc(100% - 40px);
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: -670px;
+    height: 883px;
+    background-image: url("/images/home/projects/projects-smoke.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media(768px) {
+      background-image: url("/images/home/projects/projects-smoke-mobile.png");
+      background-size: contain;
+      bottom: -728px;
+    }
+  }
+}
+
+.projects-list {
+  position: relative;
+  height: clamp(31.688rem, 19.529rem + 54.04vw, 84.375rem);
+
+  &__item {
+    display: block;
+    position: relative;
+    height: calc(100% / 3);
+
+    @include media(767px) {
+      height: auto;
+    }
+
+    &::after {
+      @include absoluteFull;
+      background: linear-gradient(110deg, rgba(49, 44, 32, 0.65) 0%, rgba(27, 22, 4, 0.42) 100%);
+      content: '';
+    }
+
+    &:hover .project-desc-wrapper {
+      opacity: unset;
+      visibility: unset;
+    }
+
+    &.h-full {
+      @include media(1023px) {
+        height: 100% !important;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    @include media(1330px) {
+      max-width: 200px;
+    }
+  }
+}
+
+.project-desc-wrapper {
+  position: absolute;
+  width: calc(100% - clamp(1.75rem, 0.394rem + 6.03vw, 7.625rem));
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #eee8df;
+  z-index: 2;
+  overflow-y: auto;
+  transition: .3s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.project-desc {
+  padding: clamp(1.25rem, 1.048rem + 0.9vw, 2.125rem) clamp(1.25rem, 1.178rem + 0.32vw, 1.563rem);
+
+  &__title {
+    font-weight: 400;
+    font-size: clamp(1.125rem, 0.923rem + 0.9vw, 2rem);
+    font-family: $second-family;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #000;
+    text-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.25);
+    margin-top: clamp(0.875rem, 0.284rem + 2.63vw, 3.438rem);
+  }
+
+  &__location {
+    @include flex(6px);
+    font-size: clamp(0.75rem, 0.692rem + 0.26vw, 1rem);
+    font-weight: 400;
+    line-height: 140%;
+    color: #000;
+    align-items: center;
+    margin-top: clamp(0.625rem, 0.538rem + 0.38vw, 1rem);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.692rem + 0.26vw, 1rem);
+    line-height: 140%;
+    color: #1f1f1f;
+    margin-top: clamp(0.563rem, 0.462rem + 0.45vw, 1rem);
+  }
+
+  &__price-wrapper {
+    @include flex(7px);
+    line-height: 140%;
+    font-weight: 400;
+    margin-top: clamp(0.625rem, 0.524rem + 0.45vw, 1.063rem);
+    font-size: clamp(0.75rem, 0.635rem + 0.51vw, 1.25rem);
+    color: #1f1f1f;
+  }
+
+  &__price {
+    font-size: clamp(0.875rem, 0.788rem + 0.38vw, 1.25rem);
+    line-height: 140%;
+    color: #1f1f1f;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(0.875rem, 0.817rem + 0.26vw, 1.125rem);
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #644f00;
+    margin-top: clamp(1.125rem, 0.49rem + 2.82vw, 3.875rem);
+    transition: .3s ease-out;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    @include media(1830px) {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    @include media(1400px) {
+      font-size: clamp(0.875rem, 0.817rem + 0.26vw, 1.125rem);
+      margin-top: clamp(1.125rem, 0.49rem + 2.82vw, 3.875rem);
+    }
+  }
+
+  &__arrow {
+    flex-shrink: 0;
+  }
+}

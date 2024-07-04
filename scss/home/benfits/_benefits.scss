@@ -1,0 +1,102 @@
+@import "../../base/vars";
+
+.benefits {
+  position: relative;
+  margin-bottom: clamp(5.625rem, 3.606rem + 8.97vw, 14.375rem);
+
+  &__content {
+    max-width: 1406px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: clamp(1.875rem, 1.442rem + 1.92vw, 3.75rem);
+  }
+}
+
+.benefits-list {
+  @include grid(3);
+  gap: 90px 30px;
+
+  @include media(1024px) {
+    gap: 20px;
+    @include grid(2);
+  }
+
+  @include media(600px) {
+    display: none;
+  }
+
+  &--top {
+    transition: 1s ease-out;
+    
+    &.disabled {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+  }
+
+  &--bottom {
+    transition: 1s ease-out;
+
+    &.disabled {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  }
+
+  &__label {
+    display: block;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.788rem + 0.38vw, 1.25rem);
+    line-height: 140%;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-family: $third-family;
+    font-size: clamp(1.75rem, 1.144rem + 2.69vw, 4.375rem);
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    background: linear-gradient(180deg, #deceac 0%, #a48861 47.92%, #806642 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: clamp(0.313rem, 0.038rem + 1.22vw, 1.5rem);
+  }
+
+  &__text {
+    font-size: clamp(0.875rem, 0.788rem + 0.38vw, 1.25rem);
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.mobile-benefits {
+  display: none;
+  transition: 1s ease-out;
+  @include media(600px) {
+    display: block;
+  }
+
+  &.disabled {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  &__wrapper {
+    @include flexCol(30px);
+  }
+}
+
+.benefits-buttons {
+  display: none;
+  @include media(600px) {
+    @include flex(15px);
+  }
+}

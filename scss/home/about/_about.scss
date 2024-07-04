@@ -1,0 +1,94 @@
+@import "../../base/vars";
+
+.about {
+  position: relative;
+  aspect-ratio: 1920 / 1452;
+  margin-bottom: clamp(0.5rem, -0.293rem + 3.53vw, 3.938rem);
+  overflow: hidden;
+
+  @include media(1024px) {
+    min-height: 945px;
+    aspect-ratio: unset;
+  }
+
+  &__img {
+    @include absoluteFull;
+    object-fit: cover;
+
+    @include media(600px) {
+      position: static;
+    }
+
+    @include media (430px) {
+      min-width: 640px !important;
+      transform: translateX(-28%);
+    }
+
+    @include media (430px) {
+      min-width: 640px !important;
+      transform: translateX(-36%);
+    }
+  }
+
+  &__container {
+    position: relative;
+    @include flexRowCenter;
+    height: 100%;
+    z-index: 1;
+
+    @include media(1330px) {
+      display: block;
+      height: auto;
+    }
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    max-width: 1444px;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    max-width: 725px;
+  }
+
+  &__label {
+    display: inline-block;
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.788rem + 0.38vw, 1.25rem);
+    line-height: 140%;
+    color: #deceac;
+    margin-bottom: clamp(1.125rem, 0.952rem + 0.77vw, 1.875rem);
+  }
+
+  &__title {
+    margin-bottom: clamp(1.125rem, 0.808rem + 1.41vw, 2.5rem);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.817rem + 0.26vw, 1.125rem);
+    line-height: 140%;
+    color: #fff;
+    margin-bottom: clamp(1.25rem, 0.962rem + 1.28vw, 2.5rem);
+  }
+
+  &__text-item {
+    font-weight: 700;
+  }
+
+  &__link {
+    max-width: 477px;
+    display: block;
+    background-color: transparent;
+
+    &:hover {
+      max-width: 500px;
+    }
+
+    @include media(1310px) {
+      font-size: 13px;
+    }
+  }
+}
