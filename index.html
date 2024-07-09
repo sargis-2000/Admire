@@ -11,6 +11,24 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/splide.min.css">
     <link rel="stylesheet" href="./css/home.min.css">
+    <style>
+        .background_list{
+            z-index: 4;
+            opacity: .8;
+            transform-origin: 50% 100%;
+            background-color: #111;
+            flex-direction: column;
+            align-items: center;
+            width: 104px;
+            height: 100%;
+            display: flex;
+            position: absolute;
+            will-change: transform;
+            transform-style: preserve-3d;
+        }
+        .section-item{z-index: 5;}
+        .header{z-index: 5;}
+    </style>
 </head>
 <body>
     <header class="header" style="background-image: url('/images/header/header-bg.jpg');">
@@ -1829,7 +1847,7 @@
 
                     <div class="features-items disabled">
                         <ol class="features-list">
-                            <li class="features-list__item">
+                            <li class="features-list__item features-list__item_anim">
                                 <img src="./images/home/features/features-icon.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -1841,7 +1859,7 @@
                                 </p>
                             </li>
 
-                            <li class="features-list__item flexible-taxation">
+                            <li class="features-list__item features-list__item_anim flexible-taxation">
                                 <img src="./images/home/features/features-icon2.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -1853,7 +1871,7 @@
                                 </p>
                             </li>
 
-                            <li class="features-list__item high-demand">
+                            <li class="features-list__item features-list__item_anim high-demand">
                                 <img src="./images/home/features/features-icon3.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -1865,7 +1883,7 @@
                                 </p>
                             </li>
 
-                            <li class="features-list__item timely-delivery">
+                            <li class="features-list__item features-list__item_anim timely-delivery">
                                 <img src="./images/home/features/features-icon4.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -1877,7 +1895,7 @@
                                 </p>
                             </li>
 
-                            <li class="features-list__item finance-center">
+                            <li class="features-list__item features-list__item_anim finance-center">
                                 <img src="./images/home/features/features-icon5.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -1890,7 +1908,7 @@
                             </li>
                         </ol>
 
-                        <div class="features-middle">
+                        <div class="features-middle" id="middle_anim">
                             <ul class="features-middle__list">
                                 <li class="features-middle__item">
                                     <span class="features-middle__num">01</span>
@@ -1936,10 +1954,11 @@
                             <button class="section-item features-middle__btn" data-popup="consultation-popup">
                                 <span class="section-item__inner">Получить консультацию</span>
                             </button>
+                            <div class="background_list"></div>
                         </div>
 
                         <ol class="features-list features-right">
-                            <li class="features-list__item">
+                            <li class="features-list__item features-list__item_anim">
                                 <img src="./images/home/features/features-icon6.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -1951,7 +1970,7 @@
                                 </p>
                             </li>
 
-                            <li class="features-list__item stable-economy">
+                            <li class="features-list__item features-list__item_anim stable-economy">
                                 <img src="./images/home/features/features-icon7.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -1963,7 +1982,7 @@
                                 </p>
                             </li>
 
-                            <li class="features-list__item tourists-annually">
+                            <li class="features-list__item features-list__item_anim tourists-annually">
                                 <img src="./images/home/features/features-icon8.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -1975,7 +1994,7 @@
                                 </p>
                             </li>
 
-                            <li class="features-list__item installments">
+                            <li class="features-list__item features-list__item_anim installments">
                                 <img src="./images/home/features/features-icon9.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -1987,7 +2006,7 @@
                                 </p>
                             </li>
 
-                            <li class="features-list__item assignment">
+                            <li class="features-list__item features-list__item_anim assignment">
                                 <img src="./images/home/features/features-icon10.svg" alt="feature-icon" class="benefits-list__icon">
 
                                 <h3 class="features-list__title">
@@ -3232,5 +3251,47 @@
     <script src="./js/modules/splide/splide.min.js"></script>
     <script src="./js/modules/splide/splide-extension-auto-scroll.min.js"></script>
     <script type="module" src="./js/main.js"></script>
+    <script>
+        let contents = document.querySelectorAll('.features-list__item_anim');
+
+        window.addEventListener('scroll', function() {
+            /* Плавное появление текста по бокам от центральных числе */
+            contents.forEach((content, index) => {
+                let distanceToContent = content.offsetTop - window.innerHeight;
+                let distanceToCenter = Math.abs( content.offsetTop - window.innerHeight / 2 - 100); // Расстояние до центра экрана
+                let opacity = 0.2;
+                if (window.scrollY <= distanceToContent) {
+                    opacity =  0.2;
+                } else if (window.scrollY <= distanceToCenter) {
+                    opacity =  0.2 + (window.scrollY - distanceToContent) / (distanceToCenter - distanceToContent) * (1 - 0.2);
+                } else {
+                    opacity =  1;
+                }
+                 // Прозрачность на основе расстояния до центра
+                content.style.opacity = opacity < 0.2 ? 0.2 : opacity;
+            });
+            
+        });
+        
+
+        /* Центральное затемнение чисел */
+        window.addEventListener('scroll', function() {
+            
+            let middleAnimElement = document.getElementById("middle_anim");
+            let backgroundListElement = middleAnimElement.querySelector(".background_list");
+            let middleTop = middleAnimElement.offsetTop - window.innerHeight / 2 - 100;
+            let middleHeight = middleAnimElement.clientHeight * 0.9 + middleTop;
+            let transformValue = "";
+    
+            if (window.scrollY >= middleTop && window.scrollY < middleHeight) {
+                transformValue = "translate3d(0px, 0px, 0px) scale3d(1, " + (1 - (window.scrollY - middleTop) / (middleHeight - middleTop)) + ", 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)";
+            } else if (window.scrollY >= middleHeight) {
+                transformValue = "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)";
+            }
+            
+            backgroundListElement.style.transform = transformValue;
+        });
+        
+    </script>
 </body>
 </html>
